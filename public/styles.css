@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   border: none;
   color: white;
   font-size: 20px;
+  font-weight: 600;
   margin-right: 112px;
 }
 
@@ -33,16 +35,59 @@ body {
 .footer {
   background-color: white;
   height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-text {
-  left: 613px;
-  position: absolute;
-  top: 2628px;
+/* Page Divider */
+
+.page-divider-div {
+  text-align: center;
 }
+
+.page-divider {
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 15px;
+}
+
+.first {
+  margin-left: 0px;
+}
+
+/* Section Div */
 
 .section {
   height: 600px;
+}
+
+/* About Me */
+.about-me {
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+
+.about-me p {
+  height: 100px;
+  font-size: 20px;
+  margin-top: 200px;
+  text-align: center;
+  width: 600px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 400px;
+  margin-left: 120px;
+  margin-top: 100px;
+  width: 400px;
 }
 
 .circle {
