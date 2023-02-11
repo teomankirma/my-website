@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header and Footer */
+
+.header {
+  background-color: #7286d3;
+  height: 160px;
+}
+
+.header-items {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 112px;
+}
+
+.header-navigation-div {
+  height: 24px;
+  left: 500px;
+  position: absolute;
+  top: 68px;
+  width: 1265px;
+}
+
+.footer {
+  background-color: white;
+  height: 160px;
+}
+
+.footer-text {
+  left: 613px;
+  position: absolute;
+  top: 2628px;
+}
+
+.section {
+  height: 600px;
+}
+
+.circle {
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  height: 400px;
+  left: 260px;
+  position: absolute;
+  top: 148px;
+  width: 400px;
+}
+
+.education,
+.contact-me {
+  background-color: #7286d3;
+}
