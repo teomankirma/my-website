@@ -56,6 +56,17 @@ body {
   width: 15px;
 }
 
+.circle {
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  height: 400px;
+  left: 260px;
+  position: absolute;
+  top: 148px;
+  width: 400px;
+}
+
 .first {
   margin-left: 0px;
 }
@@ -64,6 +75,11 @@ body {
 
 .section {
   height: 600px;
+}
+
+.education,
+.contact-me {
+  background-color: #7286d3;
 }
 
 /* About Me */
@@ -147,23 +163,33 @@ td {
   text-align: center;
 }
 
-.circle {
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  height: 400px;
-  left: 260px;
-  position: absolute;
-  top: 148px;
-  width: 400px;
-}
-
-.education,
-.contact-me {
-  background-color: #7286d3;
-}
-
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Contact Me */
+
+.contact-me img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+.contact-me h1 {
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.contact-me table {
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.contact-me a {
+  color: white;
+  text-decoration: none;
 }
