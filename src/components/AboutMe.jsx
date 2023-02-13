@@ -3,7 +3,7 @@ import image from "../images/photo.jpeg";
 function AboutMe() {
   return (
     <div className="about-me section">
-      <img className="profile-pic" src={image}></img>
+      <img className="profile-pic" src={image} alt="logo"></img>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Sit amet mauris
