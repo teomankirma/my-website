@@ -24,6 +24,14 @@ body {
   margin-right: 112px;
 }
 
+.flag {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  margin-top: 62px;
+  padding-left: 30px;
+}
+
 .header-navigation-div {
   height: 24px;
   left: 500px;
