@@ -67,6 +67,7 @@ body {
 }
 
 /* About Me */
+
 .about-me {
   display: grid;
   column-gap: 40px;
@@ -105,6 +106,47 @@ body {
   margin-top: auto;
 }
 
+/* My Experiences */
+
+table {
+  table-layout: fixed;
+  width: 800px;
+}
+
+td {
+  padding-top: 20px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+}
+
+.rectangle {
+  height: 70px;
+  width: 200px;
+}
+
+.html-img,
+.npm-img,
+.js-img {
+  text-align: right;
+}
+
+.js-img {
+  padding-right: 70px;
+}
+
+.react-img {
+  padding-left: 70px;
+}
+
+.my-experiences p {
+  font-size: 20px;
+  padding-top: 60px;
+  text-align: center;
+}
+
 .circle {
   background-color: #bbb;
   border-radius: 50%;
@@ -119,4 +161,9 @@ body {
 .education,
 .contact-me {
   background-color: #7286d3;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
