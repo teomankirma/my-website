@@ -19,7 +19,7 @@ body {
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-right: 112px;
 }
@@ -27,7 +27,7 @@ body {
 .flag {
   background-color: transparent;
   border: none;
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-top: 62px;
   padding-left: 30px;
 }
@@ -101,7 +101,7 @@ body {
 
 .about-me p {
   height: 100px;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 200px;
   text-align: center;
   width: 600px;
@@ -166,7 +166,7 @@ td {
 }
 
 .my-experiences p {
-  font-size: 20px;
+  font-size: 1.25rem;
   padding-top: 60px;
   text-align: center;
 }

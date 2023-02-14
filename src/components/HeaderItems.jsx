@@ -1,5 +1,3 @@
-import Languages from "./Languages";
-
 function HeaderItems() {
   return (
     <div className="header-div">
