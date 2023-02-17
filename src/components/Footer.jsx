@@ -1,5 +1,9 @@
 function Footer() {
-  return <div className="footer">© 2023 Teoman Kirma</div>;
+  return (
+    <div className="footer">
+      <p>© 2023 Teoman Kirma</p>
+    </div>
+  );
 }
 
 export default Footer;
