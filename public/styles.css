@@ -100,11 +100,11 @@ body {
 .profile-pic {
   border-radius: 50%;
   width: 80%;
+  margin-bottom: 5%;
 }
 
 .about-me p {
-  font-size: 2rem;
-  padding-top: 10%;
+  font-size: 1.5rem;
 }
 
 .row {
@@ -139,6 +139,7 @@ body {
 }
 
 .education img {
+  margin-bottom: 5%;
   width: 50%;
 }
 
@@ -210,7 +211,11 @@ td {
 .contact-me table {
   font-size: 1.25rem;
   margin-top: 2%;
-  text-align: center;
+}
+
+.contact-me td {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .contact-me a {

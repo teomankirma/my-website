@@ -44,7 +44,6 @@ function MyExperiences() {
           </p>
         </div>
       </div>
-      ;
     </div>
   );
 }

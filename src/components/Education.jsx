@@ -39,7 +39,6 @@ function Education() {
           </Carousel>
         </div>
       </div>
-      ;
     </div>
   );
 }
