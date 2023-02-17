@@ -213,12 +213,13 @@ td {
   margin-top: 2%;
 }
 
-.contact-me td {
+/* .contact-me td {
   padding-left: 2%;
   padding-right: 2%;
-}
+} */
 
 .contact-me a {
   color: white;
+  font-size: 2rem;
   text-decoration: none;
 }

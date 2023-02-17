@@ -18,14 +18,18 @@ function ContactMe() {
             <tr>
               <td>
                 <a href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/">
-                  LinkedIn
+                  <i class="fa-brands fa-linkedin fa-bounce"></i>
                 </a>
               </td>
               <td>
-                <a href="https://twitter.com/teomankirma">Twitter</a>
+                <a href="https://twitter.com/teomankirma">
+                  <i class="fa-brands fa-twitter fa-bounce"></i>
+                </a>
               </td>
               <td>
-                <a href="https://github.com/teomankirma">Github</a>
+                <a href="https://github.com/teomankirma">
+                  <i class="fa-brands fa-github fa-bounce"></i>
+                </a>
               </td>
             </tr>
           </table>
