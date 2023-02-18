@@ -104,12 +104,12 @@ body {
 }
 
 .about-me p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .row {
   text-align: center;
-  padding: 3%;
+  padding: 2%;
 }
 
 /* .about-me {
@@ -185,6 +185,10 @@ td {
 .my-experiences p {
   font-size: 1.25rem;
   padding-top: 5%;
+  text-align: center;
+}
+
+.my-experiences h1 {
   text-align: center;
 }
 

@@ -2,8 +2,9 @@ import image from "../images/photo.jpeg";
 
 function AboutMe() {
   return (
-    <div className="about-me section">
+    <div id="aboutMe" className="about-me section">
       <div className="row align-items-center">
+        <h1>About Me</h1>
         <div className="col-lg-6 justify-content-center">
           <img className="profile-pic" src={image} alt="logo"></img>
         </div>

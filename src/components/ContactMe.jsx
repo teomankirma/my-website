@@ -3,7 +3,7 @@ import hi from "../images/hi.gif";
 
 function ContactMe() {
   return (
-    <div className="contact-me section">
+    <div id="contactMe" className="contact-me section">
       <PageDivider />
       <div className="row">
         <div className="col-lg-12">

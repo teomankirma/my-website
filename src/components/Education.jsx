@@ -10,7 +10,7 @@ function Education() {
   return (
     <div className="education section">
       <PageDivider />
-      <div className="row">
+      <div id="education" className="row">
         <div className="col-lg-12">
           <h1 className="education-text">Education</h1>
           <Carousel
