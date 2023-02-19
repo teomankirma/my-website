@@ -8,11 +8,11 @@ import university from "../images/university.jpeg";
 
 function Education(props) {
   return (
-    <div className="education section">
+    <div id="education" className="education section">
       <PageDivider />
-      <div id="education" className="row">
+      <div className="row">
+        <h1 className="education-text">{props.language.education}</h1>
         <div className="col-lg-12">
-          <h1 className="education-text">{props.language.education}</h1>
           <Carousel
             infiniteLoop={true}
             emulateTouch={true}
