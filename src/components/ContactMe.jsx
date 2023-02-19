@@ -1,14 +1,14 @@
 import PageDivider from "./PageDivider";
 import hi from "../images/hi.gif";
 
-function ContactMe() {
+function ContactMe(props) {
   return (
     <div id="contactMe" className="contact-me section">
       <PageDivider />
       <div className="row">
         <div className="col-lg-12">
           {" "}
-          <h1>Contact Me</h1>
+          <h1>{props.language.contactMe}</h1>
         </div>
         <div className="col-lg-12">
           <img src={hi} alt="hi"></img>

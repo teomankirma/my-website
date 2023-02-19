@@ -6,12 +6,12 @@ import mongodb from "../images/mongodb.png";
 import npm from "../images/npm.png";
 import react from "../images/react.png";
 
-function MyExperiences() {
+function MyExperiences(props) {
   return (
     <div className="my-experiences section" id="myExperiences">
       <PageDivider />
       <div className="row">
-        <h1>My Experiences</h1>
+        <h1>{props.language.myExperiences}</h1>
         <div className="col-lg-12">
           <table className="center">
             <tr>
@@ -39,10 +39,7 @@ function MyExperiences() {
               </td>
             </tr>
           </table>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <p>{props.language.myExperiencesText}</p>
         </div>
       </div>
     </div>

@@ -1,7 +1,4 @@
-import HeaderItems from "./HeaderItems";
-import Languages from "./Languages";
-
-function Header() {
+function Header(props) {
   return (
     <nav
       id="navbar-customized"
@@ -20,22 +17,42 @@ function Header() {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#aboutMe">
-                About Me
+                {props.language.aboutMe}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#education">
-                Education
+                {props.language.education}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#myExperiences">
-                My Experiences
+                {props.language.myExperiences}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#contactMe">
-                Contact Me
+                {props.language.contactMe}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                aria-current="page"
+                href="#turkce"
+                onClick={props.turkish}
+              >
+                🇹🇷 Türkçe
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                aria-current="page"
+                href="#english"
+                onClick={props.english}
+              >
+                🇬🇧 English
               </a>
             </li>
           </ul>
@@ -46,10 +63,3 @@ function Header() {
 }
 
 export default Header;
-
-{
-  /* <div className="header">
-<Languages />
-<HeaderItems />
-</div> */
-}
