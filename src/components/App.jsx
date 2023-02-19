@@ -15,7 +15,7 @@ function App() {
     aboutMeText:
       "Merhaba, ismim Teoman. 20 yaşındayım ve Nişantaşı Üniversitesi'nde Yazılım Mühendisliği bölümünde eğitimime devam etmekteyim. İzmir'de yaşıyorum. Basketbol oynamayı, gitar çalmayı ve oyun oynamayı seviyorum. Front-End Developer veya Full-Stack Developer olmayı hedefliyorum.",
     myExperiencesText:
-      "HTML, CSS, JavaScript vb. Front-End dilleri ve Framework'lerinde tecrübelerim var. Okulumdaki eğitimden kaynaklı Java, C#, Dart dillerinde de biraz tecrübeliyim.",
+      "HTML, CSS, JavaScript vb. Front-End dilleri ve Framework'lerinde tecrübelerim var. Okulumdaki eğitimden kaynaklı Java, C#, Dart dillerinde de tecrübeliyim.",
     firstSchool: "Abdi İbrahim İlkokulu",
     middleSchool: "İstanbul Akademi Koleji",
     highSchool: "Emlakbank Süleyman Demirel Anadolu Lisesi",
@@ -30,7 +30,7 @@ function App() {
     aboutMeText:
       "Hello, my name is Teoman. I'm 20 years old and I'm studying Software Engineering at Nisantasi University. I live in Izmir. I love playing basketball, playing guitar and playing video games. I aim to be Front-End Developer or Full-Stack Developer.",
     myExperiencesText:
-      "I have experiences with Front-End languages and frameworks such as HTML, CSS, Javascript etc. I have some experience in Java, C#, Dart languages, which is due to the education at my school.",
+      "I have experiences with Front-End languages and frameworks such as HTML, CSS, Javascript etc. I have experience in Java, C#, Dart languages, which is due to the education at my school.",
     firstSchool: "Abdi Ibrahim First School",
     middleSchool: "Istanbul Academy College Middle School",
     highSchool: "Emlakbank Suleyman Demirel High School",
