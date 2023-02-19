@@ -24,31 +24,6 @@ body {
   color: white !important;
 }
 
-/* .header-items {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-right: 112px;
-} */
-
-/* .flag {
-  background-color: transparent;
-  border: none;
-  font-size: 1.875rem;
-  margin-top: 62px;
-  padding-left: 30px;
-} */
-
-/* .header-navigation-div {
-  height: 24px;
-  left: 500px;
-  position: absolute;
-  top: 68px;
-  width: 1265px;
-} */
-
 .footer {
   background-color: white;
   margin-top: 3%;
@@ -87,8 +62,7 @@ body {
   margin-left: 0px;
 }
 
-/* Section Div */
-/* TODO: REMOVE SECTION DIV LATER!!!!! */
+/* Section Backgrounds */
 
 .education,
 .contact-me {
@@ -107,33 +81,20 @@ body {
   font-size: 1.25rem;
 }
 
+.about-me h1 {
+  font-size: 2rem;
+}
+
 .row {
   text-align: center;
   padding: 2%;
 }
 
-/* .about-me {
-  display: grid;
-  column-gap: 5%;
-  grid-template-columns: auto auto;
-  padding: 5%;
-}
-
-.about-me p {
-  font-size: 1.25rem;
-
-  text-align: center;
-}
-
-.profile-pic {
-  border-radius: 50%;
-  width: 0%;
-} */
-
 /* Education */
 
 .education-text {
   color: white;
+  font-size: 2rem;
   margin-bottom: 5%;
   text-align: center;
 }
@@ -185,6 +146,7 @@ td {
 }
 
 .my-experiences h1 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -204,6 +166,7 @@ td {
 
 .contact-me h1 {
   color: white;
+  font-size: 2rem;
   margin-bottom: 3%;
   text-align: center;
 }
@@ -212,11 +175,6 @@ td {
   font-size: 1.25rem;
   margin-top: 2%;
 }
-
-/* .contact-me td {
-  padding-left: 2%;
-  padding-right: 2%;
-} */
 
 .contact-me a {
   color: white;

@@ -8,7 +8,7 @@ import university from "../images/university.jpeg";
 
 function Education(props) {
   return (
-    <div id="education" className="education section">
+    <div id="education" className="education">
       <PageDivider />
       <div className="row">
         <h1 className="education-text">{props.language.education}</h1>

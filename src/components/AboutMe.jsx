@@ -2,7 +2,7 @@ import image from "../images/photo.jpeg";
 
 function AboutMe(props) {
   return (
-    <div id="aboutMe" className="about-me section">
+    <div id="aboutMe" className="about-me">
       <div className="row align-items-center">
         <h1>{props.language.aboutMe}</h1>
         <div className="col-lg-6 justify-content-center">
