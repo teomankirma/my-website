@@ -10,7 +10,7 @@ function MyExperiences(props) {
   return (
     <div className="my-experiences" id="myExperiences">
       <PageDivider />
-      <div className="row">
+      <div className="row mx-0">
         <h1>{props.language.myExperiences}</h1>
         <div className="col-lg-12">
           <table className="center">

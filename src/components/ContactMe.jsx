@@ -5,7 +5,7 @@ function ContactMe(props) {
   return (
     <div id="contactMe" className="contact-me">
       <PageDivider />
-      <div className="row">
+      <div className="row mx-0">
         <div className="col-lg-12">
           {" "}
           <h1>{props.language.contactMe}</h1>

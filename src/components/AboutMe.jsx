@@ -3,7 +3,7 @@ import image from "../images/photo.jpeg";
 function AboutMe(props) {
   return (
     <div id="aboutMe" className="about-me">
-      <div className="row align-items-center">
+      <div className="row align-items-center mx-0">
         <h1>{props.language.aboutMe}</h1>
         <div className="col-lg-6 justify-content-center">
           <img className="profile-pic" src={image} alt="logo"></img>

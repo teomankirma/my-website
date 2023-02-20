@@ -1,11 +1,5 @@
 * {
-  margin: 0px;
-  padding: 0px;
   font-family: "Poppins", sans-serif;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 /* Header and Footer */
@@ -86,8 +80,9 @@ body {
 }
 
 .row {
-  text-align: center;
+  margin: 0;
   padding: 2%;
+  text-align: center;
 }
 
 /* Education */
