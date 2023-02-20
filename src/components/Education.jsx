@@ -9,7 +9,7 @@ import university from "../images/university.jpeg";
 function Education(props) {
   return (
     <div id="education" className="education">
-      <PageDivider />
+      {/* <PageDivider /> */}
       <div className="row mx-0">
         <h1 className="education-text">{props.language.education}</h1>
         <div className="col-lg-12">

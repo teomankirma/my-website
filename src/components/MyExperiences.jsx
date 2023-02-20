@@ -9,7 +9,7 @@ import react from "../images/react.png";
 function MyExperiences(props) {
   return (
     <div className="my-experiences" id="myExperiences">
-      <PageDivider />
+      {/* <PageDivider /> */}
       <div className="row mx-0">
         <h1>{props.language.myExperiences}</h1>
         <div className="col-lg-12">

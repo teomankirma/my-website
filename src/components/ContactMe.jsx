@@ -4,7 +4,7 @@ import hi from "../images/hi.gif";
 function ContactMe(props) {
   return (
     <div id="contactMe" className="contact-me">
-      <PageDivider />
+      {/* <PageDivider /> */}
       <div className="row mx-0">
         <div className="col-lg-12">
           {" "}

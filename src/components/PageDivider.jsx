@@ -4,6 +4,8 @@ function PageDivider() {
       <span className="page-divider first"></span>
       <span className="page-divider"></span>
       <span className="page-divider"></span>
+      <span className="page-divider"></span>
+      <span className="page-divider"></span>
     </div>
   );
 }
