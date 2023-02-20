@@ -1,4 +1,3 @@
-import PageDivider from "./PageDivider";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import firstSchool from "../images/first-school.jpeg";

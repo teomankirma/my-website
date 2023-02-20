@@ -1,4 +1,3 @@
-import PageDivider from "./PageDivider";
 import css from "../images/css.png";
 import html from "../images/html.png";
 import js from "../images/js.png";

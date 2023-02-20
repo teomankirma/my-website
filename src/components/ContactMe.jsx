@@ -1,4 +1,3 @@
-import PageDivider from "./PageDivider";
 import hi from "../images/hi.gif";
 
 function ContactMe(props) {
