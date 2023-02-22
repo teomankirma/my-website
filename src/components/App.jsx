@@ -6,6 +6,7 @@ import ContactMe from "./ContactMe";
 import Footer from "./Footer";
 import { useState } from "react";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
+import Home from "./Home";
 
 function App() {
   const TURKISH = {
@@ -65,7 +66,9 @@ function App() {
         turkish={languageTurkish}
         english={languageEnglish}
       />
-      {/* <AboutMe language={language} />
+      <Home />
+      <AboutMe language={language} />
+      {/* 
       <Education language={language} />
       <MyExperiences language={language} />
       <ContactMe language={language} />
