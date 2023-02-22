@@ -5,6 +5,7 @@ import MyExperiences from "./MyExperiences";
 import ContactMe from "./ContactMe";
 import Footer from "./Footer";
 import { useState } from "react";
+import { NextUIProvider, createTheme } from "@nextui-org/react";
 
 function App() {
   const TURKISH = {
@@ -49,19 +50,27 @@ function App() {
     setLanguage(ENGLISH);
   }
 
+  const lightTheme = createTheme({
+    type: "light",
+  });
+
+  const darkTheme = createTheme({
+    type: "dark",
+  });
+
   return (
-    <div>
+    <NextUIProvider theme={lightTheme}>
       <Header
         language={language}
         turkish={languageTurkish}
         english={languageEnglish}
       />
-      <AboutMe language={language} />
+      {/* <AboutMe language={language} />
       <Education language={language} />
       <MyExperiences language={language} />
       <ContactMe language={language} />
-      <Footer />
-    </div>
+      <Footer /> */}
+    </NextUIProvider>
   );
 }
 
