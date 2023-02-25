@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import { useState } from "react";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 import Home from "./Home";
+import WhatIDo from "./WhatIDo";
 
 function App() {
   const TURKISH = {
@@ -68,6 +69,7 @@ function App() {
       />
       <Home />
       <AboutMe language={language} />
+      <WhatIDo />
       {/* 
       <Education language={language} />
       <MyExperiences language={language} />

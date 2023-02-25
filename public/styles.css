@@ -124,6 +124,20 @@ ul {
   background: linear-gradient(#697177, #697177) no-repeat center/1px 100%;
 }
 
+/* What I Do */
+
+.what-i-do-text {
+  display: inline-block;
+  margin-top: 10%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+.what-i-do-text i {
+  color: #17c964;
+  font-size: 3rem;
+}
+
 /* .profile-pic {
   border-radius: 50%;
   width: 80%;
