@@ -89,6 +89,7 @@ function AboutMe(props) {
           </div>
         </div>
       </div>
+      <Spacer y={3} />
     </div>
   );
 }

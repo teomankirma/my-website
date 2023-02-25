@@ -9,7 +9,7 @@ function Resume() {
       <div className="row">
         <SectionHeader header="Resume" />
       </div>
-      <Spacer y={2} />
+      <Spacer y={3} />
       <div className="row">
         <div className="my-education col-lg-6">
           <Text h3 css={{ textAlign: "left" }}>
@@ -104,6 +104,7 @@ function Resume() {
           Download CV <i class="fa-solid fa-download"></i>
         </Button>
       </div>
+      <Spacer y={3} />
     </div>
   );
 }

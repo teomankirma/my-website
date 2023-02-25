@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader";
 import WhatIDoText from "./WhatIDoText";
+import { Spacer } from "@nextui-org/react";
 
 function WhatIDo() {
   return (
@@ -7,6 +8,7 @@ function WhatIDo() {
       <div className="row">
         <SectionHeader header="What I Do?" />
       </div>
+      <Spacer y={3} />
       <WhatIDoText
         leftImage="fa-solid fa-palette"
         headerLeft="Graphic Design"
@@ -31,6 +33,7 @@ function WhatIDo() {
         headerRight="SEO Marketing"
         headerRightText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       />
+      <Spacer y={3} />
     </div>
   );
 }

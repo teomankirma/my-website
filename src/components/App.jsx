@@ -9,6 +9,7 @@ import { NextUIProvider, createTheme } from "@nextui-org/react";
 import Home from "./Home";
 import WhatIDo from "./WhatIDo";
 import Resume from "./Resume";
+import Portfolio from "./Portfolio";
 
 function App() {
   const TURKISH = {
@@ -72,6 +73,7 @@ function App() {
       <AboutMe language={language} />
       <WhatIDo />
       <Resume />
+      <Portfolio />
       {/* 
       <Education language={language} />
       <MyExperiences language={language} />
