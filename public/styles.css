@@ -11,7 +11,7 @@
 .home {
   /* TODO: Change later */
   height: 100vh;
-  background-color: gray;
+  background-color: #f7f7f7;
 }
 
 .row {
@@ -20,9 +20,15 @@
 }
 
 /* Section Backgrounds */
-.education,
-.contact-me {
-  background-color: #7286d3;
+.section {
+  margin: 0;
+  padding: 5% 5%;
+  text-align: center;
+}
+
+.what-i-do.section,
+.portfolio.section {
+  background-color: #f7f7f7;
 }
 
 /* About Me */
@@ -35,9 +41,6 @@
   width: 7%;
 }
 
-.section {
-  margin: 5% 5%;
-}
 .know-me-more {
   margin-bottom: 5%;
   margin-right: 7%;
@@ -87,6 +90,22 @@ ul {
 
 .float-end {
   float: "right";
+}
+
+/* Testimonial */
+
+.fa-angle-left,
+.fa-angle-right {
+  color: #17c964 !important;
+  font-size: 3rem;
+}
+
+.carousel-item {
+  padding: 2% 0;
+}
+
+.carousel-indicators {
+  background-color: #17c964;
 }
 
 /* .profile-pic {

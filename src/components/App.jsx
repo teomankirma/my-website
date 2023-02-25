@@ -10,6 +10,7 @@ import Home from "./Home";
 import WhatIDo from "./WhatIDo";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
+import Testimonial from "./Testimonial";
 
 function App() {
   const TURKISH = {
@@ -74,6 +75,7 @@ function App() {
       <WhatIDo />
       <Resume />
       <Portfolio />
+      <Testimonial />
       {/* 
       <Education language={language} />
       <MyExperiences language={language} />
