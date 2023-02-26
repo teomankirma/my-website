@@ -27,7 +27,8 @@
 }
 
 .what-i-do.section,
-.portfolio.section {
+.portfolio.section,
+.get-in-touch.section {
   background-color: #f7f7f7;
 }
 
@@ -106,6 +107,26 @@ ul {
 
 .carousel-indicators {
   background-color: #17c964;
+}
+
+/* Get In Touch */
+.contact-div {
+  text-align: left;
+}
+
+.contact-div i {
+  color: #17c964;
+  font-size: 1.25rem;
+  padding-right: 5%;
+}
+
+/* Footer */
+.footer {
+  padding: 5% 0;
+}
+
+.footer-text {
+  padding-left: 5%;
 }
 
 /* .profile-pic {

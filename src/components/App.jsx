@@ -11,6 +11,7 @@ import WhatIDo from "./WhatIDo";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import Testimonial from "./Testimonial";
+import GetInTouch from "./GetInTouch";
 
 function App() {
   const TURKISH = {
@@ -76,11 +77,13 @@ function App() {
       <Resume />
       <Portfolio />
       <Testimonial />
+      <GetInTouch />
+      <Footer />
       {/* 
       <Education language={language} />
       <MyExperiences language={language} />
       <ContactMe language={language} />
-      <Footer /> */}
+      */}
     </NextUIProvider>
   );
 }
