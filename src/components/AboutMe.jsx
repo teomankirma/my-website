@@ -4,7 +4,7 @@ import SectionHeader from "./SectionHeader";
 
 function AboutMe(props) {
   return (
-    <div className="about-me section">
+    <div className="about-me section" id="aboutMe">
       <div className="row">
         <SectionHeader header="Know Me More" />
       </div>

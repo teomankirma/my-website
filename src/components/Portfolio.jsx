@@ -11,7 +11,7 @@ import project7 from "../images/project7.jpeg";
 
 function Portfolio() {
   return (
-    <div className="portfolio section">
+    <div className="portfolio section" id="portfolio">
       <div className="row">
         <SectionHeader header="My Work" />
       </div>

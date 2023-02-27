@@ -1,36 +1,70 @@
 import { Navbar, Text, Link } from "@nextui-org/react";
+import { useState, useRef } from "react";
 
 function Header(props) {
+  // Navbar Collapse was not closing on clicking one item from the collapse menu. Solution is from: https://github.com/nextui-org/nextui/issues/752#issuecomment-1324264715
+
+  const navbarToggleRef = useRef();
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(
+    window.location.href.split(`${window.location.origin}`)[1]
+  );
+
+  const menuItems = [
+    { label: "Home", link: "/#home" },
+    { label: "About Me", link: "/#aboutMe" },
+    { label: "Resume", link: "/#resume" },
+    { label: "Portfolio", link: "/#portfolio" },
+    { label: "Testimonial", link: "/#testimonial" },
+    { label: "Contact", link: "/#contact" },
+  ];
+
+  const HandleSideMenu = (link) => {
+    setActiveMenu(link);
+    isSideMenuOpen && navbarToggleRef.current.click();
+  };
+
   return (
-    <Navbar>
+    <Navbar variant="sticky">
       <Navbar.Brand>
         <Text h4>Teoman Kirma</Text>
       </Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
           <Link href="https://twitter.com/teomankirma">
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </Link>
         </Navbar.Item>
         <Navbar.Item>
           <Link href="https://github.com/teomankirma">
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </Link>
         </Navbar.Item>
         <Navbar.Item>
           <Link href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/">
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </Link>
         </Navbar.Item>
-        <Navbar.Toggle showIn="sm" />
-        <Navbar.Collapse css={{ color: "$myColor" }}>
-          <Navbar.CollapseItem>Home</Navbar.CollapseItem>
-          <Navbar.CollapseItem>About Me</Navbar.CollapseItem>
-          <Navbar.CollapseItem>What I Do</Navbar.CollapseItem>
-          <Navbar.CollapseItem>Resume</Navbar.CollapseItem>
-          <Navbar.CollapseItem>Portfolio</Navbar.CollapseItem>
-          <Navbar.CollapseItem>Testimonial</Navbar.CollapseItem>
-          <Navbar.CollapseItem>Contact</Navbar.CollapseItem>
+        <Navbar.Toggle
+          ref={navbarToggleRef}
+          onChange={(isSelected) => setIsSideMenuOpen(isSelected)}
+        />
+        <Navbar.Collapse>
+          {menuItems.map((item) => (
+            <Navbar.CollapseItem
+              key={item.label}
+              isActive={item.link === activeMenu}
+              activeColor="success"
+            >
+              <Link
+                href={item.link}
+                color="inherit"
+                onPress={() => HandleSideMenu(item.link)}
+              >
+                {item.label}
+              </Link>
+            </Navbar.CollapseItem>
+          ))}
         </Navbar.Collapse>
       </Navbar.Content>
     </Navbar>

@@ -3,7 +3,7 @@ import { Spacer, Text, Textarea, Button } from "@nextui-org/react";
 
 function GetInTouch() {
   return (
-    <div className="get-in-touch section">
+    <div className="get-in-touch section" id="contact">
       <div className="row">
         <SectionHeader header="Get In Touch" />
       </div>

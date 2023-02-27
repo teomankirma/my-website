@@ -3,7 +3,7 @@ import { Text, Button, Spacer } from "@nextui-org/react";
 
 function Home() {
   return (
-    <div className="home row section">
+    <div className="home row section" id="home">
       <div className="col-lg-12">
         <Spacer y={6} />
         <Text h2>Welcome</Text>

@@ -4,7 +4,7 @@ import TestimonialCarousel from "./TestimonialCarousel";
 
 function Testimonial() {
   return (
-    <div className="testimonial section">
+    <div className="testimonial section" id="testimonial">
       <div className="row">
         <SectionHeader header="Client Speak" />
       </div>

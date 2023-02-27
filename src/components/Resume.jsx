@@ -5,7 +5,7 @@ import ResumeProgress from "./ResumeProgress";
 
 function Resume() {
   return (
-    <div className="resume section">
+    <div className="resume section" id="resume">
       <div className="row">
         <SectionHeader header="Resume" />
       </div>

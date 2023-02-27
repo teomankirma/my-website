@@ -1,8 +1,5 @@
 import Header from "./Header";
 import AboutMe from "./AboutMe";
-import Education from "./Education";
-import MyExperiences from "./MyExperiences";
-import ContactMe from "./ContactMe";
 import Footer from "./Footer";
 import { useState } from "react";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
