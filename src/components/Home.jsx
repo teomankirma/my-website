@@ -41,7 +41,7 @@ function Home() {
           Hire Me
         </Button>
       </div>
-      <Spacer y={2} />
+      <Spacer y={6} />
     </div>
   );
 }
