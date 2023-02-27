@@ -31,19 +31,28 @@ function Header(props) {
       </Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
-          <Link href="https://twitter.com/teomankirma">
+          <Link color="success" href="https://twitter.com/teomankirma">
             <i className="fa-brands fa-twitter"></i>
           </Link>
         </Navbar.Item>
         <Navbar.Item>
-          <Link href="https://github.com/teomankirma">
+          <Link color="success" href="https://github.com/teomankirma">
             <i className="fa-brands fa-github"></i>
           </Link>
         </Navbar.Item>
         <Navbar.Item>
-          <Link href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/">
+          <Link
+            color="success"
+            href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/"
+          >
             <i className="fa-brands fa-linkedin"></i>
           </Link>
+        </Navbar.Item>
+        <Navbar.Item>
+          <Link>🇹🇷</Link>
+        </Navbar.Item>
+        <Navbar.Item>
+          <Link>🇬🇧</Link>
         </Navbar.Item>
         <Navbar.Toggle
           ref={navbarToggleRef}
@@ -59,7 +68,7 @@ function Header(props) {
               <Link
                 href={item.link}
                 color="inherit"
-                onPress={() => HandleSideMenu(item.link)}
+                onClick={() => HandleSideMenu(item.link)}
               >
                 {item.label}
               </Link>
