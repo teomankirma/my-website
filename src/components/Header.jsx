@@ -1,5 +1,7 @@
-import { Navbar, Text, Link } from "@nextui-org/react";
+import { Navbar, Text, Link, Switch } from "@nextui-org/react";
 import { useState, useRef } from "react";
+import SunIcon from "./SunIcon";
+import NightIcon from "./NightIcon";
 
 function Header(props) {
   // Navbar Collapse was not closing on clicking one item from the collapse menu. Solution is from: https://github.com/nextui-org/nextui/issues/752#issuecomment-1324264715
@@ -30,6 +32,13 @@ function Header(props) {
         <Text h4>Teoman Kirma</Text>
       </Navbar.Brand>
       <Navbar.Content>
+        <Navbar.Item>
+          <Switch
+            color="success"
+            iconOff={<SunIcon />}
+            iconOn={<NightIcon />}
+          />
+        </Navbar.Item>
         <Navbar.Item>
           <Link color="success" href="https://twitter.com/teomankirma">
             <i className="fa-brands fa-twitter"></i>
