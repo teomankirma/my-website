@@ -17,23 +17,23 @@ function GetInTouch() {
             </Text>
             <Spacer y={1} />
             <Text size="$xl">
-              <i class="fa-solid fa-phone"></i>(060) 444 434 444
+              <i className="fa-solid fa-phone"></i>(060) 444 434 444
             </Text>
             <Text size="$xl">
-              <i class="fa-solid fa-envelope"></i>teomankirma@gmail.com
+              <i className="fa-solid fa-envelope"></i>teomankirma@gmail.com
             </Text>
             <Spacer y={2} />
             <Text h4>FOLLOW ME</Text>
             <Spacer y={1} />
             <Text>
               <a href="https://twitter.com/teomankirma">
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
               </a>
               <a href="https://github.com/teomankirma">
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
               </a>
               <a href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/">
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </Text>
             <Spacer y={1} />
@@ -50,6 +50,7 @@ function GetInTouch() {
               css={{ paddingRight: "5%" }}
               bordered
               color="success"
+              aria-label="getInTouchTextArea"
             />
             <Textarea
               placeholder="Email"
@@ -57,6 +58,7 @@ function GetInTouch() {
               width="50%"
               bordered
               color="success"
+              aria-label="getInTouchTextArea"
             />
             <Spacer y={1} />
             <Textarea
@@ -65,6 +67,7 @@ function GetInTouch() {
               width="100%"
               bordered
               color="success"
+              aria-label="getInTouchTextArea"
             />
             <Spacer y={1} />
             <div className="d-flex justify-content-center">

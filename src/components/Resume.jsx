@@ -101,7 +101,7 @@ function Resume() {
           ghost
           css={{ textAlign: "center" }}
         >
-          Download CV <i class="fa-solid fa-download"></i>
+          Download CV <i className="fa-solid fa-download"></i>
         </Button>
       </div>
       <Spacer y={3} />

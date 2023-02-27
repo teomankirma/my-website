@@ -7,13 +7,12 @@ import client4 from "../images/client4.jpeg";
 
 function TestimonialCarousel() {
   return (
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-indicators">
+    <div id="carouselExample" className="carousel slide">
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExample"
-          data-bs-slide-to="0"
-          class="active"
+          className="active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -36,8 +35,8 @@ function TestimonialCarousel() {
           aria-label="Slide 4"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
           <TestimonialCarouselCard
             image={client1}
             name="Jay Shah"
@@ -45,7 +44,7 @@ function TestimonialCarousel() {
             comment="Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure."
           />
         </div>
-        <div class="carousel-item">
+        <div className="carousel-item">
           <TestimonialCarouselCard
             image={client2}
             name="Patrick Cary"
@@ -53,8 +52,7 @@ function TestimonialCarousel() {
             comment="I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure."
           />
         </div>
-        <div class="carousel-item">
-          {" "}
+        <div className="carousel-item">
           <TestimonialCarouselCard
             image={client3}
             name="Chris Tom"
@@ -62,7 +60,7 @@ function TestimonialCarousel() {
             comment="I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. Excellent."
           />
         </div>
-        <div class="carousel-item">
+        <div className="carousel-item">
           <TestimonialCarouselCard
             image={client4}
             name="Dennis Jacques"
@@ -72,26 +70,26 @@ function TestimonialCarousel() {
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExample"
         data-bs-slide="prev"
       >
         <span>
-          <i class="fa fa-angle-left" aria-hidden="true"></i>
+          <i className="fa fa-angle-left" aria-hidden="true"></i>
         </span>
-        <span class="visually-hidden">Previous</span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExample"
         data-bs-slide="next"
       >
         <span>
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <i className="fa fa-angle-right" aria-hidden="true"></i>
         </span>
-        <span class="visually-hidden">Next</span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );
