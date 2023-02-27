@@ -1,4 +1,3 @@
-import { Card, Text, Avatar } from "@nextui-org/react";
 import TestimonialCarouselCard from "./TestimonialCarouselCard";
 import client1 from "../images/client1.jpeg";
 import client2 from "../images/client2.jpeg";

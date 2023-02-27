@@ -1,4 +1,4 @@
-import { Spacer, Card, Text } from "@nextui-org/react";
+import { Spacer } from "@nextui-org/react";
 import SectionHeader from "./SectionHeader";
 import TestimonialCarousel from "./TestimonialCarousel";
 

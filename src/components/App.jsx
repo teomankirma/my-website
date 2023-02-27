@@ -57,9 +57,9 @@ function App() {
     type: "light",
   });
 
-  const darkTheme = createTheme({
-    type: "dark",
-  });
+  // const darkTheme = createTheme({
+  //   type: "dark",
+  // });
 
   return (
     <NextUIProvider theme={lightTheme}>

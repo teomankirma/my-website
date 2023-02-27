@@ -1,7 +1,7 @@
 import SectionHeader from "./SectionHeader";
 import { Spacer, Text, Textarea, Button } from "@nextui-org/react";
 
-function GetInTouch() {
+function GetInTouch(props) {
   return (
     <div className="get-in-touch section" id="contact">
       <div className="row">

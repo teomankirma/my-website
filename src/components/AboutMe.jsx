@@ -1,5 +1,4 @@
 import { Spacer, Text, Button } from "@nextui-org/react";
-import HR from "./HR";
 import SectionHeader from "./SectionHeader";
 
 function AboutMe(props) {
