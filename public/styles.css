@@ -8,14 +8,14 @@
   margin-left: 50%;
 }
 
-.home {
-  /* TODO: Change later */
-  background-color: #f7f7f7;
-}
-
 .row {
   margin: 0;
   text-align: center;
+}
+
+.hire-me-btn {
+  display: flex;
+  justify-content: center;
 }
 
 /* Section Backgrounds */
