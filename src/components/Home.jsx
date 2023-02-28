@@ -1,5 +1,5 @@
-import { Typewriter } from "react-simple-typewriter";
-import { Text, Button, Spacer, Container, Row, Col } from "@nextui-org/react";
+import { Typewriter } from 'react-simple-typewriter';
+import { Text, Button, Spacer, Container, Row, Col } from '@nextui-org/react';
 
 function Home() {
   return (
@@ -19,7 +19,7 @@ function Home() {
                 words={[
                   "I'm Teoman Kirma.",
                   "I'm a Software Engineer.",
-                  "I'm a Frontend Developer.",
+                  "I'm a Frontend Developer."
                 ]}
                 loop={0}
                 cursor={true}
@@ -39,14 +39,7 @@ function Home() {
         </Row>
         <Row>
           <Col className="hire-me-btn">
-            <Button
-              color="success"
-              size="lg"
-              rounded
-              auto
-              ghost
-              css={{ zIndex: "0" }}
-            >
+            <Button color="success" size="lg" rounded auto ghost css={{ zIndex: '0' }}>
               Hire Me
             </Button>
           </Col>
@@ -58,45 +51,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <div className="col-lg-12">
-<Spacer y={6} />
-<Text h2>Welcome</Text>
-</div>
-<div className="col-lg-12">
-<Spacer y={1} />
-<Text h1 weight="semibold">
-  <Typewriter
-    words={[
-      "I'm Teoman Kirma.",
-      "I'm a Software Engineer.",
-      "I'm a Frontend Developer.",
-    ]}
-    loop={0}
-    cursor={true}
-    cursorColor="#17c964"
-  />
-</Text>
-</div>
-<div className="col-lg-12">
-<Spacer y={1} />
-<Text h3 weight="medium">
-  based in Istanbul, Turkiye.
-</Text>
-<Spacer y={2} />
-</div>
-<div className="col-lg-12 d-flex justify-content-center">
-<Button
-  color="success"
-  size="lg"
-  rounded
-  auto
-  ghost
-  css={{ textAlign: "center" }}
->
-  Hire Me
-</Button>
-</div>
-<Spacer y={6} /> */
-}

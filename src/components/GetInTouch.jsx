@@ -1,7 +1,7 @@
-import SectionHeader from "./SectionHeader";
-import { Spacer, Text, Textarea, Button } from "@nextui-org/react";
+import SectionHeader from './SectionHeader';
+import { Spacer, Text, Textarea, Button } from '@nextui-org/react';
 
-function GetInTouch(props) {
+function GetInTouch() {
   return (
     <div className="get-in-touch section" id="contact">
       <div className="row">
@@ -12,9 +12,7 @@ function GetInTouch(props) {
         <div className="col-lg-3">
           <div className="contact-div">
             <Text h4>ADDRESS</Text>
-            <Text size="$lg">
-              4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028
-            </Text>
+            <Text size="$lg">4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028</Text>
             <Spacer y={1} />
             <Text size="$xl">
               <i className="fa-solid fa-phone"></i>(060) 444 434 444
@@ -47,7 +45,7 @@ function GetInTouch(props) {
               placeholder="Name"
               rows={1}
               width="50%"
-              css={{ paddingRight: "5%" }}
+              css={{ paddingRight: '5%' }}
               bordered
               color="success"
               aria-label="getInTouchTextArea"
@@ -71,12 +69,7 @@ function GetInTouch(props) {
             />
             <Spacer y={1} />
             <div className="d-flex justify-content-center">
-              <Button
-                color="success"
-                size="lg"
-                rounded
-                css={{ textAlign: "center" }}
-              >
+              <Button color="success" size="lg" rounded css={{ textAlign: 'center' }}>
                 Send Message
               </Button>
             </div>

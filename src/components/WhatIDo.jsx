@@ -1,6 +1,6 @@
-import SectionHeader from "./SectionHeader";
-import WhatIDoText from "./WhatIDoText";
-import { Spacer } from "@nextui-org/react";
+import SectionHeader from './SectionHeader';
+import WhatIDoText from './WhatIDoText';
+import { Spacer } from '@nextui-org/react';
 
 function WhatIDo() {
   return (

@@ -1,4 +1,5 @@
-import { Card } from "@nextui-org/react";
+import { Card } from '@nextui-org/react';
+import PropTypes from 'prop-types';
 
 function PortfolioCard(props) {
   return (
@@ -8,10 +9,15 @@ function PortfolioCard(props) {
         objectFit="cover"
         width="100%"
         height={props.height}
-        alt={props.alt}
-      ></Card.Image>
+        alt={props.alt}></Card.Image>
     </Card>
   );
 }
+
+PortfolioCard.propTypes = {
+  src: PropTypes.string,
+  height: PropTypes.number,
+  alt: PropTypes.string
+};
 
 export default PortfolioCard;

@@ -1,13 +1,13 @@
-import SectionHeader from "./SectionHeader";
-import { Spacer, Button } from "@nextui-org/react";
-import PortfolioCard from "./PortfolioCard";
-import project1 from "../images/project1.jpeg";
-import project2 from "../images/project2.jpeg";
-import project3 from "../images/project3.jpeg";
-import project4 from "../images/project4.jpeg";
-import project5 from "../images/project5.jpeg";
-import project6 from "../images/project6.jpeg";
-import project7 from "../images/project7.jpeg";
+import SectionHeader from './SectionHeader';
+import { Spacer, Button } from '@nextui-org/react';
+import PortfolioCard from './PortfolioCard';
+import project1 from '../images/project1.jpeg';
+import project2 from '../images/project2.jpeg';
+import project3 from '../images/project3.jpeg';
+import project4 from '../images/project4.jpeg';
+import project5 from '../images/project5.jpeg';
+import project6 from '../images/project6.jpeg';
+import project7 from '../images/project7.jpeg';
 
 function Portfolio() {
   return (

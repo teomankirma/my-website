@@ -1,7 +1,7 @@
-import SectionHeader from "./SectionHeader";
-import { Text, Spacer, Button } from "@nextui-org/react";
-import ResumeCard from "./ResumeCard";
-import ResumeProgress from "./ResumeProgress";
+import SectionHeader from './SectionHeader';
+import { Text, Spacer, Button } from '@nextui-org/react';
+import ResumeCard from './ResumeCard';
+import ResumeProgress from './ResumeProgress';
 
 function Resume() {
   return (
@@ -12,7 +12,7 @@ function Resume() {
       <Spacer y={3} />
       <div className="row">
         <div className="my-education col-lg-6">
-          <Text h3 css={{ textAlign: "left" }}>
+          <Text h3 css={{ textAlign: 'left' }}>
             My Education
           </Text>
           <ResumeCard
@@ -41,7 +41,7 @@ function Resume() {
           />
         </div>
         <div className="my-experience col-lg-6">
-          <Text h3 css={{ textAlign: "left" }}>
+          <Text h3 css={{ textAlign: 'left' }}>
             My Experience
           </Text>
           <ResumeCard
@@ -72,7 +72,7 @@ function Resume() {
       </div>
       <Spacer y={5} />
       <div className="row">
-        <Text h3 css={{ textAlign: "left" }}>
+        <Text h3 css={{ textAlign: 'left' }}>
           My Skills
         </Text>
         <ResumeProgress
@@ -94,13 +94,7 @@ function Resume() {
       </div>
       <Spacer y={2} />
       <div className="col-lg-12 d-flex justify-content-center">
-        <Button
-          color="success"
-          size="xl"
-          rounded
-          ghost
-          css={{ textAlign: "center" }}
-        >
+        <Button color="success" size="xl" rounded ghost css={{ textAlign: 'center' }}>
           Download CV <i className="fa-solid fa-download"></i>
         </Button>
       </div>

@@ -1,4 +1,5 @@
-import { Card, Text, Badge, Spacer } from "@nextui-org/react";
+import { Card, Text, Badge, Spacer } from '@nextui-org/react';
+import PropTypes from 'prop-types';
 
 function ResumeCard(props) {
   return (
@@ -18,5 +19,11 @@ function ResumeCard(props) {
     </div>
   );
 }
+
+ResumeCard.propTypes = {
+  badge: PropTypes.string,
+  cardHeader: PropTypes.string,
+  cardText: PropTypes.string
+};
 
 export default ResumeCard;

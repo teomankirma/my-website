@@ -1,9 +1,9 @@
-import { Navbar, Text, Link, Switch } from "@nextui-org/react";
-import { useState, useRef } from "react";
-import SunIcon from "./SunIcon";
-import NightIcon from "./NightIcon";
+import { Navbar, Text, Link, Switch } from '@nextui-org/react';
+import { useState, useRef } from 'react';
+import SunIcon from './SunIcon';
+import NightIcon from './NightIcon';
 
-function Header(props) {
+function Header() {
   // Navbar Collapse was not closing on clicking one item from the collapse menu. Solution is from: https://github.com/nextui-org/nextui/issues/752#issuecomment-1324264715
 
   const navbarToggleRef = useRef();
@@ -13,12 +13,12 @@ function Header(props) {
   );
 
   const menuItems = [
-    { label: "Home", link: "/#home" },
-    { label: "About Me", link: "/#aboutMe" },
-    { label: "Resume", link: "/#resume" },
-    { label: "Portfolio", link: "/#portfolio" },
-    { label: "Testimonial", link: "/#testimonial" },
-    { label: "Contact", link: "/#contact" },
+    { label: 'Home', link: '/#home' },
+    { label: 'About Me', link: '/#aboutMe' },
+    { label: 'Resume', link: '/#resume' },
+    { label: 'Portfolio', link: '/#portfolio' },
+    { label: 'Testimonial', link: '/#testimonial' },
+    { label: 'Contact', link: '/#contact' }
   ];
 
   const HandleSideMenu = (link) => {
@@ -33,11 +33,7 @@ function Header(props) {
       </Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
-          <Switch
-            color="success"
-            iconOff={<SunIcon />}
-            iconOn={<NightIcon />}
-          />
+          <Switch color="success" iconOff={<SunIcon />} iconOn={<NightIcon />} />
         </Navbar.Item>
         <Navbar.Item>
           <Link color="success" href="https://twitter.com/teomankirma">
@@ -50,10 +46,7 @@ function Header(props) {
           </Link>
         </Navbar.Item>
         <Navbar.Item>
-          <Link
-            color="success"
-            href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/"
-          >
+          <Link color="success" href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/">
             <i className="fa-brands fa-linkedin"></i>
           </Link>
         </Navbar.Item>
@@ -72,13 +65,8 @@ function Header(props) {
             <Navbar.CollapseItem
               key={item.label}
               isActive={item.link === activeMenu}
-              activeColor="success"
-            >
-              <Link
-                href={item.link}
-                color="inherit"
-                onClick={() => HandleSideMenu(item.link)}
-              >
+              activeColor="success">
+              <Link href={item.link} color="inherit" onClick={() => HandleSideMenu(item.link)}>
                 {item.label}
               </Link>
             </Navbar.CollapseItem>

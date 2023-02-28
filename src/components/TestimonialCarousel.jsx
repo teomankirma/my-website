@@ -1,8 +1,8 @@
-import TestimonialCarouselCard from "./TestimonialCarouselCard";
-import client1 from "../images/client1.jpeg";
-import client2 from "../images/client2.jpeg";
-import client3 from "../images/client3.jpeg";
-import client4 from "../images/client4.jpeg";
+import TestimonialCarouselCard from './TestimonialCarouselCard';
+import client1 from '../images/client1.jpeg';
+import client2 from '../images/client2.jpeg';
+import client3 from '../images/client3.jpeg';
+import client4 from '../images/client4.jpeg';
 
 function TestimonialCarousel() {
   return (
@@ -13,26 +13,22 @@ function TestimonialCarousel() {
           data-bs-target="#carouselExample"
           className="active"
           aria-current="true"
-          aria-label="Slide 1"
-        ></button>
+          aria-label="Slide 1"></button>
         <button
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
+          aria-label="Slide 2"></button>
         <button
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+          aria-label="Slide 3"></button>
         <button
           type="button"
           data-bs-target="#carouselExample"
           data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
+          aria-label="Slide 4"></button>
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -72,8 +68,7 @@ function TestimonialCarousel() {
         className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
+        data-bs-slide="prev">
         <span>
           <i className="fa fa-angle-left" aria-hidden="true"></i>
         </span>
@@ -83,8 +78,7 @@ function TestimonialCarousel() {
         className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
+        data-bs-slide="next">
         <span>
           <i className="fa fa-angle-right" aria-hidden="true"></i>
         </span>

@@ -1,6 +1,6 @@
-import { Spacer } from "@nextui-org/react";
-import SectionHeader from "./SectionHeader";
-import TestimonialCarousel from "./TestimonialCarousel";
+import { Spacer } from '@nextui-org/react';
+import SectionHeader from './SectionHeader';
+import TestimonialCarousel from './TestimonialCarousel';
 
 function Testimonial() {
   return (

@@ -1,4 +1,4 @@
-import { Text } from "@nextui-org/react";
+import { Text } from '@nextui-org/react';
 
 function Footer() {
   return (

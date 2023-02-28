@@ -1,4 +1,5 @@
-import { Text } from "@nextui-org/react";
+import { Text } from '@nextui-org/react';
+import PropTypes from 'prop-types';
 
 function WhatIDoText(props) {
   return (
@@ -24,5 +25,14 @@ function WhatIDoText(props) {
     </div>
   );
 }
+
+WhatIDoText.propTypes = {
+  leftImage: PropTypes.string,
+  headerLeft: PropTypes.string,
+  headerLeftText: PropTypes.string,
+  rightImage: PropTypes.string,
+  headerRight: PropTypes.string,
+  headerRightText: PropTypes.string
+};
 
 export default WhatIDoText;

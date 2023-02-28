@@ -1,5 +1,6 @@
-import HR from "./HR";
-import { Text } from "@nextui-org/react";
+import HR from './HR';
+import { Text } from '@nextui-org/react';
+import PropTypes from 'prop-types';
 
 function SectionHeader(props) {
   return (
@@ -11,5 +12,9 @@ function SectionHeader(props) {
     </div>
   );
 }
+
+SectionHeader.propTypes = {
+  header: PropTypes.string
+};
 
 export default SectionHeader;
