@@ -72,7 +72,7 @@ function GetInTouch() {
             />
             <Spacer y={1} />
             <div className="d-flex justify-content-center">
-              <Button color="success" size="lg" rounded css={{ textAlign: 'center' }}>
+              <Button color="success" size="lg" rounded css={{ textAlign: 'center', zIndex: '0' }}>
                 Send Message
               </Button>
             </div>

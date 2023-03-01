@@ -57,7 +57,7 @@ function KnowMeMore() {
             </li>
             <Spacer y={1} />
             <li className="center-item">
-              <Button color="success" size="lg" rounded>
+              <Button color="success" size="lg" rounded css={{ zIndex: '0' }}>
                 Download CV
               </Button>
             </li>

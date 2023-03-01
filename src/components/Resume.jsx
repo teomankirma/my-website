@@ -94,7 +94,7 @@ function Resume() {
       </div>
       <Spacer y={2} />
       <div className="col-lg-12 d-flex justify-content-center">
-        <Button color="success" size="xl" rounded ghost css={{ textAlign: 'center' }}>
+        <Button color="success" size="xl" rounded ghost css={{ textAlign: 'center', zIndex: '0' }}>
           Download CV <i className="fa-solid fa-download"></i>
         </Button>
       </div>
