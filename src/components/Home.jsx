@@ -1,13 +1,26 @@
 import { Typewriter } from 'react-simple-typewriter';
-import { Text, Button, Spacer, Container, Row, Col } from '@nextui-org/react';
+import { Text, Button, Spacer, Container, Row, Col, Avatar } from '@nextui-org/react';
+import photo from '../images/photo.jpeg';
 
 function Home() {
   return (
     <div className="home section" id="home">
       <Container>
-        <Spacer y={6} />
+        <Spacer y={3} />
+        <Row>
+          <Col className="center-col">
+            <Avatar
+              src={photo}
+              color="success"
+              bordered
+              zoomed
+              css={{ height: '200px', width: '200px' }}
+            />
+          </Col>
+        </Row>
         <Row>
           <Col>
+            <Spacer y={1} />
             <Text h2>Welcome</Text>
           </Col>
         </Row>
@@ -38,13 +51,13 @@ function Home() {
           </Col>
         </Row>
         <Row>
-          <Col className="hire-me-btn">
+          <Col className="center-col">
             <Button color="success" size="lg" rounded auto ghost css={{ zIndex: '0' }}>
               Hire Me
             </Button>
           </Col>
         </Row>
-        <Spacer y={6} />
+        <Spacer y={3} />
       </Container>
     </div>
   );
