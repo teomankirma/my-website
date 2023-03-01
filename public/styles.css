@@ -109,8 +109,12 @@ ul {
 
 .contact-div i {
   color: #17c964;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-right: 5%;
+}
+
+.get-in-touch-info {
+  color: inherit;
 }
 
 /* Footer */

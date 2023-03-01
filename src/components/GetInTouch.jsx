@@ -14,15 +14,18 @@ function GetInTouch() {
             <Text h4>ADDRESS</Text>
             <Text size="$lg">4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028</Text>
             <Spacer y={1} />
-            <Text size="$xl">
-              <i className="fa-solid fa-phone"></i>(060) 444 434 444
-            </Text>
-            <Text size="$xl">
-              <i className="fa-solid fa-envelope"></i>
-              <a className="email-link" href="mailto:teomankirma@gmail.com">
+            <a className="get-in-touch-info" href="tel:+905342166935">
+              <Text size="$lg" h6>
+                <i className="fa-solid fa-phone"></i>
+                +90 534 216 6935
+              </Text>
+            </a>
+            <a className="get-in-touch-info" href="mailto:teomankirma@gmail.com">
+              <Text size="$lg" h6>
+                <i className="fa-solid fa-envelope"></i>
                 teomankirma@gmail.com
-              </a>
-            </Text>
+              </Text>
+            </a>
             <Spacer y={2} />
             <Text h4>FOLLOW ME</Text>
             <Spacer y={1} />
