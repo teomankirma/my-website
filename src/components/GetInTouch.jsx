@@ -18,7 +18,10 @@ function GetInTouch() {
               <i className="fa-solid fa-phone"></i>(060) 444 434 444
             </Text>
             <Text size="$xl">
-              <i className="fa-solid fa-envelope"></i>teomankirma@gmail.com
+              <i className="fa-solid fa-envelope"></i>
+              <a className="email-link" href="mailto:teomankirma@gmail.com">
+                teomankirma@gmail.com
+              </a>
             </Text>
             <Spacer y={2} />
             <Text h4>FOLLOW ME</Text>

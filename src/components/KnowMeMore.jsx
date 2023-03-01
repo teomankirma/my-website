@@ -38,7 +38,7 @@ function KnowMeMore() {
             <li>
               <Text weight="medium">
                 <b className="li-b">Email:</b>
-                <a className="li-a" href="mailto: teomankirma@gmail.com">
+                <a className="email-link" href="mailto: teomankirma@gmail.com">
                   teomankirma@gmail.com
                 </a>
               </Text>
