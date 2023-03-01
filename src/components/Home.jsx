@@ -8,7 +8,7 @@ function Home() {
       <Container>
         <Spacer y={3} />
         <Row>
-          <Col className="center-col">
+          <Col className="center-item">
             <Avatar
               src={photo}
               color="success"
@@ -51,7 +51,7 @@ function Home() {
           </Col>
         </Row>
         <Row>
-          <Col className="center-col">
+          <Col className="center-item">
             <Button color="success" size="lg" rounded auto ghost css={{ zIndex: '0' }}>
               Hire Me
             </Button>

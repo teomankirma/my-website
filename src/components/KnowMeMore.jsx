@@ -54,15 +54,14 @@ function KnowMeMore() {
               </Text>
             </li>
             <Spacer y={1} />
-            <li>
-              {' '}
-              <Button color="success" size="lg" rounded css={{ textAlign: 'center' }}>
+            <li className="center-item">
+              <Button color="success" size="lg" rounded>
                 Download CV
               </Button>
             </li>
           </ul>
         </div>
-        <div className="row asdasdasd">
+        <div className="row experience-items">
           <div className="col-6">
             <Text h2 css={{ color: '#697177' }}>
               3+

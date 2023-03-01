@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.center-col {
+.center-item {
   display: flex;
   justify-content: center;
 }
@@ -31,7 +31,7 @@
   background-color: #f7f7f7;
 }
 
-/* About Me */
+/* Know Me More  */
 .hr {
   height: 5px;
   border: none;
@@ -68,7 +68,7 @@ ul {
   padding-right: 1.5%;
 }
 
-.asdasdasd {
+.experience-items {
   background: linear-gradient(#697177, #697177) no-repeat center/1px 100%;
 }
 
