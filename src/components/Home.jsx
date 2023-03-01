@@ -47,9 +47,11 @@ function Home() {
       </div>
       <div className="row">
         <div className="col-lg-12 center-item">
-          <Button color="success" size="lg" rounded auto ghost css={{ zIndex: '0' }}>
-            Hire Me
-          </Button>
+          <a href="#contact">
+            <Button color="success" size="lg" rounded auto ghost css={{ zIndex: '0' }}>
+              Hire Me
+            </Button>
+          </a>
         </div>
       </div>
       <Spacer y={1} />
