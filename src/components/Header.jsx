@@ -1,4 +1,4 @@
-import { Navbar, Text, Link, Switch } from '@nextui-org/react';
+import { Navbar, Link, Switch } from '@nextui-org/react';
 import useDarkMode from 'use-dark-mode';
 import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
@@ -32,9 +32,7 @@ function Header() {
 
   return (
     <Navbar variant="sticky">
-      <Navbar.Brand>
-        <Text h4>Teoman Kirma</Text>
-      </Navbar.Brand>
+      <Navbar.Brand style={{ fontWeight: 'bold' }}>Teoman Kirma</Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
           <Switch
