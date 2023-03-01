@@ -11,7 +11,9 @@ function KnowMeMore() {
       <div className="row">
         <div className="col-lg-7">
           <div className="know-me-more">
-            <Text h3>I&apos;m Teoman Kirma, a Frontend Developer.</Text>
+            <Text h3>
+              I&apos;m <span style={{ color: '#17c964' }}>Teoman Kirma</span>, a Frontend Developer.
+            </Text>
             <Text size="$lg" weight="medium">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -63,20 +65,12 @@ function KnowMeMore() {
         </div>
         <div className="row experience-items">
           <div className="col-6">
-            <Text h2 css={{ color: '#697177' }}>
-              3+
-            </Text>
-            <Text h6 css={{ color: '#697177' }}>
-              Years Experience
-            </Text>
+            <Text h2>3+</Text>
+            <Text h6>Years Experience</Text>
           </div>
           <div className="col-6">
-            <Text h2 css={{ color: '#697177' }}>
-              30+
-            </Text>
-            <Text h6 css={{ color: '#697177' }}>
-              Projects Done
-            </Text>
+            <Text h2>30+</Text>
+            <Text h6>Projects Done</Text>
           </div>
         </div>
       </div>
