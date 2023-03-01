@@ -1,5 +1,7 @@
 import { Navbar, Text, Link, Switch } from '@nextui-org/react';
+import useDarkMode from 'use-dark-mode';
 import { useState, useRef } from 'react';
+import PropTypes from 'prop-types';
 import SunIcon from './SunIcon';
 import NightIcon from './NightIcon';
 
@@ -26,6 +28,8 @@ function Header() {
     isSideMenuOpen && navbarToggleRef.current.click();
   };
 
+  const darkMode = useDarkMode(false);
+
   return (
     <Navbar variant="sticky">
       <Navbar.Brand>
@@ -33,7 +37,13 @@ function Header() {
       </Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
-          <Switch color="success" iconOff={<SunIcon />} iconOn={<NightIcon />} />
+          <Switch
+            color="success"
+            iconOff={<SunIcon />}
+            iconOn={<NightIcon />}
+            checked={darkMode.value}
+            onChange={() => darkMode.toggle()}
+          />
         </Navbar.Item>
         <Navbar.Item>
           <Link color="success" href="https://twitter.com/teomankirma">
@@ -76,5 +86,10 @@ function Header() {
     </Navbar>
   );
 }
+
+Header.propTypes = {
+  light: PropTypes.func,
+  dark: PropTypes.func
+};
 
 export default Header;

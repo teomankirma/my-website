@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
+import useDarkMode from 'use-dark-mode';
 import Header from './Header';
 import Home from './Home';
 import KnowMeMore from './KnowMeMore';
@@ -41,6 +42,14 @@ function App() {
     university: 'Nisantasi University 3/4'
   };
 
+  const lightTheme = createTheme({
+    type: 'light'
+  });
+
+  const darkTheme = createTheme({
+    type: 'dark'
+  });
+
   const [language, setLanguage] = useState(ENGLISH);
 
   function languageTurkish(e) {
@@ -53,16 +62,10 @@ function App() {
     setLanguage(ENGLISH);
   }
 
-  const lightTheme = createTheme({
-    type: 'light'
-  });
-
-  // const darkTheme = createTheme({
-  //   type: "dark",
-  // });
+  const darkMode = useDarkMode(false);
 
   return (
-    <NextUIProvider theme={lightTheme}>
+    <NextUIProvider theme={darkMode.value ? darkTheme : lightTheme}>
       <Header language={language} turkish={languageTurkish} english={languageEnglish} />
       <Home />
       <KnowMeMore language={language} />
