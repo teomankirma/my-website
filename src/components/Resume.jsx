@@ -2,6 +2,7 @@ import SectionHeader from './SectionHeader';
 import { Text, Spacer, Button } from '@nextui-org/react';
 import ResumeCard from './ResumeCard';
 import ResumeProgress from './ResumeProgress';
+import CV from '../asd.pdf';
 
 function Resume() {
   return (
@@ -94,9 +95,16 @@ function Resume() {
       </div>
       <Spacer y={2} />
       <div className="col-lg-12 d-flex justify-content-center">
-        <Button color="success" size="xl" rounded ghost css={{ textAlign: 'center', zIndex: '0' }}>
-          Download CV <i className="fa-solid fa-download"></i>
-        </Button>
+        <a href={CV} download>
+          <Button
+            color="success"
+            size="xl"
+            rounded
+            ghost
+            css={{ textAlign: 'center', zIndex: '0' }}>
+            Download CV <i className="fa-solid fa-download"></i>
+          </Button>
+        </a>
       </div>
       <Spacer y={3} />
     </div>

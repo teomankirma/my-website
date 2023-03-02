@@ -1,5 +1,6 @@
 import { Spacer, Text, Button } from '@nextui-org/react';
 import SectionHeader from './SectionHeader';
+import CV from '../asd.pdf';
 
 function KnowMeMore() {
   return (
@@ -57,9 +58,11 @@ function KnowMeMore() {
             </li>
             <Spacer y={1} />
             <li className="center-item">
-              <Button color="success" size="lg" rounded css={{ zIndex: '0' }}>
-                Download CV
-              </Button>
+              <a href={CV} download>
+                <Button color="success" size="lg" rounded css={{ zIndex: '0' }}>
+                  Download CV
+                </Button>
+              </a>
             </li>
           </ul>
         </div>

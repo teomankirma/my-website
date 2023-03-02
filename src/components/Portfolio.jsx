@@ -20,7 +20,7 @@ function Portfolio() {
       {/* Button Groups */}
       <div className="row" id="buttonContainer">
         <div className="col-lg-12 d-flex justify-content-center">
-          <Button.Group color="success">
+          <Button.Group color="success" css={{ zIndex: '0' }}>
             <Button className="btn" ghost>
               All
             </Button>
