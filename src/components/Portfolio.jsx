@@ -39,7 +39,7 @@ function Portfolio() {
       <Spacer y={3} />
 
       {/* Portfolio Cards */}
-      <div className="row container">
+      <div className="row">
         <div className="col-lg-4">
           <div className="filterDiv brand">
             <PortfolioCard src={project1} height={340} alt="project 1" />
@@ -48,6 +48,7 @@ function Portfolio() {
           <div className="filterDiv brand photos">
             <PortfolioCard src={project4} height={700} alt="project 4" />
           </div>
+          <Spacer y={1} />
         </div>
         <div className="col-lg-4">
           <div className="filterDiv design">
@@ -57,6 +58,7 @@ function Portfolio() {
           <div className="filterDiv design photos">
             <PortfolioCard src={project7} height={500} alt="project 7" />
           </div>
+          <Spacer y={1} />
         </div>
         <div className="col-lg-4">
           <div className="filterDiv photos">
@@ -70,6 +72,7 @@ function Portfolio() {
           <div className="filterDiv brand">
             <PortfolioCard src={project6} height={400} alt="project 6" />
           </div>
+          <Spacer y={1} />
         </div>
       </div>
       <Spacer y={3} />

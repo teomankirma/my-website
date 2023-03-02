@@ -16,6 +16,7 @@ function Resume() {
           <Text h3 css={{ textAlign: 'left' }}>
             My Education
           </Text>
+          <Spacer y={2} />
           <ResumeCard
             badge="2008-2012"
             cardHeader="Abdi Ibrahim First School"
@@ -40,11 +41,13 @@ function Resume() {
             cardText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua."
           />
+          <Spacer y={1} />
         </div>
         <div className="my-experience col-lg-6">
           <Text h3 css={{ textAlign: 'left' }}>
             My Experience
           </Text>
+          <Spacer y={2} />
           <ResumeCard
             badge="2023-"
             cardHeader="Jr. Frontend Developer"
@@ -71,7 +74,7 @@ function Resume() {
           />
         </div>
       </div>
-      <Spacer y={5} />
+      <Spacer y={4} />
       <div className="row">
         <Text h3 css={{ textAlign: 'left' }}>
           My Skills
