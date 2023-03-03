@@ -1,5 +1,6 @@
 import SectionHeader from './SectionHeader';
 import { Spacer, Text, Textarea, Button } from '@nextui-org/react';
+import hi from '../images/hi.gif';
 
 function GetInTouch() {
   return (
@@ -11,8 +12,8 @@ function GetInTouch() {
       <div className="row">
         <div className="col-lg-3">
           <div className="contact-div">
-            <Text h4>ADDRESS</Text>
-            <Text size="$lg">4th Floor, Plot No.22, 145 Murphy Canyon Rd. San Diego CA 2028</Text>
+            <Text h4>CONTACT</Text>
+            <img src={hi} className="get-in-touch-gif" />
             <Spacer y={1} />
             <a className="get-in-touch-info" href="tel:+905342166935">
               <Text size="$lg" h6>

@@ -123,6 +123,11 @@ ul {
   color: inherit;
 }
 
+.get-in-touch-gif {
+  margin-top: 4%;
+  border-radius: 5%;
+}
+
 /* Footer */
 .footer {
   padding: 5% 0;
