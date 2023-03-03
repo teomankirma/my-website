@@ -54,7 +54,7 @@ function Header() {
           </Link>
         </Navbar.Item>
         <Navbar.Item>
-          <Link color="success" href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/">
+          <Link color="success" href="https://www.linkedin.com/in/teomankirma/">
             <i className="fa-brands fa-linkedin"></i>
           </Link>
         </Navbar.Item>

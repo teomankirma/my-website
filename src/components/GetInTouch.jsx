@@ -36,7 +36,7 @@ function GetInTouch() {
               <a href="https://github.com/teomankirma">
                 <i className="fa-brands fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/teoman-k%C4%B1rma-14ba31238/">
+              <a href="https://www.linkedin.com/in/teomankirma/">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </Text>
