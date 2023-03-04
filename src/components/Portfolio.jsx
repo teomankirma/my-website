@@ -18,19 +18,10 @@ function Portfolio() {
       {/* Button Groups */}
       <div className="row" id="buttonContainer">
         <div className="col-lg-12 d-flex justify-content-center">
-          <Button.Group color="success" css={{ zIndex: '0' }}>
-            <Button className="btn" ghost>
-              All
-            </Button>
-            <Button className="btn" ghost>
-              Design
-            </Button>
-            <Button className="btn" ghost>
-              Brand
-            </Button>
-            <Button className="btn" ghost>
-              Photos
-            </Button>
+          <Button.Group color="success" css={{ zIndex: '0' }} ghost>
+            <Button>All</Button>
+            <Button>Web</Button>
+            <Button>Other</Button>
           </Button.Group>
         </div>
       </div>
@@ -39,27 +30,17 @@ function Portfolio() {
       {/* Portfolio Cards */}
       <div className="row">
         <div className="col-lg-4">
-          <div className="filterDiv brand">
-            <PortfolioCard src={atm} alt="atm" />
-          </div>
+          <PortfolioCard src={atm} alt="atm" />
           <Spacer y={1} />
-          <div className="filterDiv brand">
-            <PortfolioCard src={myWebsite} alt="my-website" />
-          </div>
+          <PortfolioCard src={myWebsite} alt="my-website" />
         </div>
         <div className="col-lg-4">
-          <div className="filterDiv brand">
-            <PortfolioCard src={blogWebsite} alt="blog-website" />
-          </div>
+          <PortfolioCard src={blogWebsite} alt="blog-website" />
           <Spacer y={1} />
-          <div className="filterDiv brand">
-            <PortfolioCard src={weather} alt="weather" height={280} />
-          </div>
+          <PortfolioCard src={weather} alt="weather" height={280} />
         </div>
         <div className="col-lg-4">
-          <div className="filterDiv brand">
-            <PortfolioCard src={keeper} alt="keeper" />
-          </div>
+          <PortfolioCard src={keeper} alt="keeper" />
           <Spacer y={1} />
         </div>
       </div>
