@@ -1,5 +1,5 @@
 import { Navbar, Link, Switch } from '@nextui-org/react';
-import useDarkMode from 'use-dark-mode';
+import useDarkMode from '@fisch0920/use-dark-mode';
 import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import SunIcon from './SunIcon';

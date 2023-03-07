@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
-import useDarkMode from 'use-dark-mode';
+import useDarkMode from '@fisch0920/use-dark-mode';
 import Header from './Header';
 import Home from './Home';
 import KnowMeMore from './KnowMeMore';
