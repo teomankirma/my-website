@@ -1,9 +1,11 @@
 import { Input, Textarea, Button, Spacer, Text } from '@nextui-org/react';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { useAlert } from 'react-alert';
 
 function ContactUsForm() {
   const form = useRef();
+  const alert = useAlert();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -11,9 +13,12 @@ function ContactUsForm() {
     emailjs.sendForm('service_40jsjer', 'template_h1g04xm', form.current, 'gzYzxyyT9NaGkkX1q').then(
       (result) => {
         console.log(result.text);
+        e.target.reset();
+        alert.show('Successfuly sent!', { type: 'success' });
       },
       (error) => {
         console.log(error.text);
+        alert.show('Oops, something went wrong!', { type: 'error' });
       }
     );
   };
