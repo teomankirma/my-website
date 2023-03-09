@@ -1,13 +1,31 @@
 import { Input, Textarea, Button, Spacer, Text } from '@nextui-org/react';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 function ContactUsForm() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_40jsjer', 'template_h1g04xm', form.current, 'gzYzxyyT9NaGkkX1q').then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <div className="contact-div">
       <Text h4>SEND US A NOTE</Text>
       <Spacer y={1} />
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <Input
           label="Full Name"
+          name="from_name"
           type="text"
           width="50%"
           css={{ paddingRight: '5%' }}
@@ -19,6 +37,7 @@ function ContactUsForm() {
         />
         <Input
           label="Email"
+          name="from_email"
           type="email"
           width="50%"
           bordered
@@ -31,6 +50,7 @@ function ContactUsForm() {
 
         <Textarea
           label="Message"
+          name="message"
           placeholder="Tell us more about your needs..."
           rows={6}
           fullWidth={true}
