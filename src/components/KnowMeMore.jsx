@@ -1,30 +1,28 @@
 import { Spacer, Text, Button } from '@nextui-org/react';
+import PropTypes from 'prop-types';
 import SectionHeader from './SectionHeader';
-import CV from '../asd.pdf';
 
-function KnowMeMore() {
+function KnowMeMore(props) {
   return (
     <div className="about-me section" id="aboutMe">
       <div className="row">
-        <SectionHeader header="Know Me More" />
+        <SectionHeader header={props.language.knowMeMore} />
       </div>
       <Spacer y={3} />
       <div className="row">
         <div className="col-lg-7">
           <div className="know-me-more">
             <Text h3>
-              I&apos;m <span style={{ color: '#17c964' }}>Teoman Kirma</span>, a Frontend Developer.
+              {props.language.whoAmIFirst}{' '}
+              <span style={{ color: '#17c964' }}>{props.language.name}</span>,
+              {props.language.whoAmISecond}.
             </Text>
             <Text size="$lg" weight="medium">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              {props.language.aboutMe}
             </Text>
             <Spacer y={1} />
             <Text size="$lg" weight="medium">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              {props.language.myExperiences}
             </Text>
           </div>
         </div>
@@ -32,35 +30,38 @@ function KnowMeMore() {
           <ul>
             <li>
               <Text weight="medium">
-                <b className="li-b">Name:</b>Teoman Kirma
+                <b className="li-b">{props.language.nameText}</b>
+                {props.language.name}
               </Text>
               <hr className="li-hr" />
             </li>
             <li>
               <Text weight="medium">
-                <b className="li-b">Email:</b>
+                <b className="li-b">{props.language.emailText}</b>
                 <a className="email-link" href="mailto: teomankirma@gmail.com">
-                  teomankirma@gmail.com
+                  {props.language.email}
                 </a>
               </Text>
               <hr className="li-hr" />
             </li>
             <li>
               <Text weight="medium">
-                <b className="li-b">Age:</b>20
+                <b className="li-b">{props.language.ageText}</b>
+                {props.language.age}
               </Text>
               <hr className="li-hr" />
             </li>
             <li>
               <Text weight="medium">
-                <b className="li-b">From:</b>Izmir, Turkiye
+                <b className="li-b">{props.language.fromText}</b>
+                {props.language.from}
               </Text>
             </li>
             <Spacer y={1} />
             <li className="center-item">
-              <a href={CV} download>
+              <a href={props.language.resume} download>
                 <Button color="success" size="lg" rounded css={{ zIndex: '0' }}>
-                  Download CV
+                  {props.language.downloadResume}
                 </Button>
               </a>
             </li>
@@ -68,12 +69,12 @@ function KnowMeMore() {
         </div>
         <div className="row experience-items">
           <div className="col-6">
-            <Text h2>3+</Text>
-            <Text h6>Years Experience</Text>
+            <Text h2>{props.language.experienceYear}</Text>
+            <Text h6>{props.language.experienceText}</Text>
           </div>
           <div className="col-6">
-            <Text h2>30+</Text>
-            <Text h6>Projects Done</Text>
+            <Text h2>{props.language.projectsNumber}</Text>
+            <Text h6>{props.language.projectsText}</Text>
           </div>
         </div>
       </div>
@@ -81,5 +82,9 @@ function KnowMeMore() {
     </div>
   );
 }
+
+KnowMeMore.propTypes = {
+  language: PropTypes.object
+};
 
 export default KnowMeMore;

@@ -4,22 +4,13 @@ import PropTypes from 'prop-types';
 function WhatIDoText(props) {
   return (
     <div className="row">
-      <div className="col-lg-6">
+      <div className="col-lg-12">
         <div className="what-i-do-text">
-          <i className={props.leftImage}></i>
+          <i className={props.image}></i>
         </div>
         <div className="what-i-do-text">
-          <Text h5>{props.headerLeft}</Text>
-          <Text>{props.headerLeftText}</Text>
-        </div>
-      </div>
-      <div className="col-lg-6">
-        <div className="what-i-do-text">
-          <i className={props.rightImage}></i>
-        </div>
-        <div className="what-i-do-text">
-          <Text h5>{props.headerRight}</Text>
-          <Text>{props.headerRightText}</Text>
+          <Text h5>{props.header}</Text>
+          <Text>{props.headerText}</Text>
         </div>
       </div>
     </div>
@@ -27,12 +18,9 @@ function WhatIDoText(props) {
 }
 
 WhatIDoText.propTypes = {
-  leftImage: PropTypes.string,
-  headerLeft: PropTypes.string,
-  headerLeftText: PropTypes.string,
-  rightImage: PropTypes.string,
-  headerRight: PropTypes.string,
-  headerRightText: PropTypes.string
+  image: PropTypes.string,
+  header: PropTypes.string,
+  headerText: PropTypes.string
 };
 
 export default WhatIDoText;

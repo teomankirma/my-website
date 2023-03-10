@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import SunIcon from './SunIcon';
 import NightIcon from './NightIcon';
 
-function Header() {
+function Header(props) {
   // Navbar Collapse was not closing on clicking one item from the collapse menu. Solution is from: https://github.com/nextui-org/nextui/issues/752#issuecomment-1324264715
 
   const navbarToggleRef = useRef();
@@ -15,12 +15,37 @@ function Header() {
   );
 
   const menuItems = [
-    { label: 'Home', link: '/#home' },
-    { label: 'About Me', link: '/#aboutMe' },
-    { label: 'Resume', link: '/#resume' },
-    { label: 'Portfolio', link: '/#portfolio' },
-    { label: 'Testimonial', link: '/#testimonial' },
-    { label: 'Contact', link: '/#contact' }
+    { label: props.language.menuItemHome, link: '/#home', key: '1' },
+    {
+      label: props.language.menuItemAboutMe,
+      link: '/#aboutMe',
+      key: '2'
+    },
+    {
+      label: props.language.menuItemWhatIDo,
+      link: '/#whatIDo',
+      key: '3'
+    },
+    {
+      label: props.language.menuItemResume,
+      link: '/#resume',
+      key: '3'
+    },
+    {
+      label: props.language.menuItemPortfolio,
+      link: '/#portfolio',
+      key: '4'
+    },
+    {
+      label: props.language.menuItemTestimonial,
+      link: '/#testimonial',
+      key: '5'
+    },
+    {
+      label: props.language.menuItemContactMe,
+      link: '/#contactMe',
+      key: '6'
+    }
   ];
 
   const HandleSideMenu = (link) => {
@@ -32,7 +57,7 @@ function Header() {
 
   return (
     <Navbar variant="sticky">
-      <Navbar.Brand style={{ fontWeight: 'bold' }}>Teoman Kirma</Navbar.Brand>
+      <Navbar.Brand style={{ fontWeight: 'bold' }}>{props.language.name}</Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
           <Switch
@@ -59,10 +84,10 @@ function Header() {
           </Link>
         </Navbar.Item>
         <Navbar.Item>
-          <Link>🇹🇷</Link>
+          <Link onClick={props.turkish}>🇹🇷</Link>
         </Navbar.Item>
         <Navbar.Item>
-          <Link>🇬🇧</Link>
+          <Link onClick={props.english}>🇬🇧</Link>
         </Navbar.Item>
         <Navbar.Toggle
           ref={navbarToggleRef}
@@ -71,7 +96,7 @@ function Header() {
         <Navbar.Collapse>
           {menuItems.map((item) => (
             <Navbar.CollapseItem
-              key={item.label}
+              key={item.key}
               isActive={item.link === activeMenu}
               activeColor="success">
               <Link href={item.link} color="inherit" onClick={() => HandleSideMenu(item.link)}>
@@ -87,7 +112,10 @@ function Header() {
 
 Header.propTypes = {
   light: PropTypes.func,
-  dark: PropTypes.func
+  dark: PropTypes.func,
+  language: PropTypes.object,
+  turkish: PropTypes.func,
+  english: PropTypes.func
 };
 
 export default Header;

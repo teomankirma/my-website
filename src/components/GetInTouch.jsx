@@ -5,7 +5,7 @@ import ContactUsForm from './ContactUsForm';
 
 function GetInTouch() {
   return (
-    <div className="get-in-touch section" id="contact">
+    <div className="get-in-touch section" id="contactMe">
       <div className="row">
         <SectionHeader header="Get In Touch" />
       </div>
