@@ -1,11 +1,15 @@
 import { Input, Textarea, Button, Spacer, Text } from '@nextui-org/react';
 import emailjs from '@emailjs/browser';
+import PropTypes from 'prop-types';
 import { useRef } from 'react';
 import { useAlert } from 'react-alert';
 
-function ContactUsForm() {
+function ContactUsForm(props) {
   const form = useRef();
   const alert = useAlert();
+
+  const success = props.alertSuccessText;
+  const errorMessage = props.alertErrorText;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,22 +18,22 @@ function ContactUsForm() {
       (result) => {
         console.log(result.text);
         e.target.reset();
-        alert.show('Successfuly sent!', { type: 'success' });
+        alert.show({ success }, { type: 'success' });
       },
       (error) => {
         console.log(error.text);
-        alert.show('Oops, something went wrong!', { type: 'error' });
+        alert.show({ errorMessage }, { type: 'error' });
       }
     );
   };
 
   return (
     <div className="contact-div">
-      <Text h4>SEND US A NOTE</Text>
+      <Text h4>{props.sendMeANote}</Text>
       <Spacer y={1} />
       <form ref={form} onSubmit={sendEmail}>
         <Input
-          label="Full Name"
+          label={props.fullNameText}
           name="from_name"
           type="text"
           width="50%"
@@ -41,7 +45,7 @@ function ContactUsForm() {
           required={true}
         />
         <Input
-          label="Email"
+          label={props.emailText}
           name="from_email"
           type="email"
           width="50%"
@@ -54,9 +58,9 @@ function ContactUsForm() {
         <Spacer y={1} />
 
         <Textarea
-          label="Message"
+          label={props.messageText}
           name="message"
-          placeholder="Tell us more about your needs..."
+          placeholder="Tell me more about your needs..."
           rows={6}
           fullWidth={true}
           bordered
@@ -73,12 +77,23 @@ function ContactUsForm() {
             type="submit"
             rounded
             css={{ textAlign: 'center', zIndex: '0' }}>
-            Send Message
+            {props.sendMessageText}
           </Button>
         </div>
       </form>
     </div>
   );
 }
+
+ContactUsForm.propTypes = {
+  language: PropTypes.object,
+  sendMeANote: PropTypes.string,
+  fullNameText: PropTypes.string,
+  emailText: PropTypes.string,
+  messageText: PropTypes.string,
+  sendMessageText: PropTypes.string,
+  alertSuccessText: PropTypes.string,
+  alertErrorText: PropTypes.string
+};
 
 export default ContactUsForm;

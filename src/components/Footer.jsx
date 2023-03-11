@@ -1,13 +1,18 @@
 import { Text } from '@nextui-org/react';
+import PropTypes from 'prop-types';
 
-function Footer() {
+function Footer(props) {
   return (
     <div className="footer">
       <Text className="footer-text" h5>
-        Copyright © 2023 Teoman Kirma. All Rights Reserved.
+        {props.language.footer}
       </Text>
     </div>
   );
 }
+
+Footer.propTypes = {
+  language: PropTypes.object
+};
 
 export default Footer;

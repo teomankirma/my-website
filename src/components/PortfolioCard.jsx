@@ -26,7 +26,7 @@ function PortfolioCard(props) {
         width={'80%'}
         css={{ display: 'flex' }}>
         <Modal.Header>
-          <Text h4>Project Title</Text>
+          <Text h4>{props.title}</Text>
         </Modal.Header>
         <Modal.Body>
           <div className="row">
@@ -38,44 +38,43 @@ function PortfolioCard(props) {
               <ul>
                 <li>
                   <Text weight="medium">
-                    <b className="portfolio-li-b">Project Info:</b>
+                    <b className="portfolio-li-b">{props.projectInfoText}</b>
                     <Spacer y={1} />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    {props.projectInfo}
                   </Text>
                 </li>
                 <Spacer y={2} />
                 <li>
                   <Text weight="medium">
-                    <b className="portfolio-li-b">Project Details:</b>
+                    <b className="portfolio-li-b">{props.projectDetailsText}</b>
                     <Spacer y={1} />
                   </Text>
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">Client:</b>Teoman Kirma
+                    <b className="li-b">{props.clientText}</b>
+                    {props.client}
                   </Text>
                   <hr className="li-hr" />
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">Technologies:</b>
+                    <b className="li-b">{props.technologiesText}</b>
+                    {props.technologies}
                   </Text>
                   <hr className="li-hr" />
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">Industry:</b>
+                    <b className="li-b">{props.industryText}</b>
+                    {props.industry}
                   </Text>
                   <hr className="li-hr" />
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">Date:</b>
+                    <b className="li-b">{props.dateText}</b>
+                    {props.date}
                   </Text>
                   <hr className="li-hr" />
                 </li>
@@ -91,7 +90,19 @@ function PortfolioCard(props) {
 PortfolioCard.propTypes = {
   src: PropTypes.string,
   height: PropTypes.number,
-  alt: PropTypes.string
+  alt: PropTypes.string,
+  title: PropTypes.string,
+  projectInfo: PropTypes.string,
+  projectInfoText: PropTypes.string,
+  projectDetailsText: PropTypes.string,
+  clientText: PropTypes.string,
+  client: PropTypes.string,
+  technologiesText: PropTypes.string,
+  technologies: PropTypes.string,
+  industryText: PropTypes.string,
+  industry: PropTypes.string,
+  dateText: PropTypes.string,
+  date: PropTypes.string
 };
 
 export default PortfolioCard;

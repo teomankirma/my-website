@@ -19,7 +19,7 @@ function TestimonialCarouselCard(props) {
         <Text>{props.comment}</Text>
       </Card.Body>
       <Card.Footer>
-        <Text>⭐️⭐️⭐️⭐️⭐️</Text>
+        <Text>{props.stars}</Text>
       </Card.Footer>
     </Card>
   );
@@ -29,7 +29,8 @@ TestimonialCarouselCard.propTypes = {
   image: PropTypes.string,
   name: PropTypes.string,
   who: PropTypes.string,
-  comment: PropTypes.string
+  comment: PropTypes.string,
+  stars: PropTypes.string
 };
 
 export default TestimonialCarouselCard;

@@ -29,22 +29,22 @@ function Header(props) {
     {
       label: props.language.menuItemResume,
       link: '/#resume',
-      key: '3'
+      key: '4'
     },
     {
       label: props.language.menuItemPortfolio,
       link: '/#portfolio',
-      key: '4'
+      key: '5'
     },
     {
       label: props.language.menuItemTestimonial,
       link: '/#testimonial',
-      key: '5'
+      key: '6'
     },
     {
       label: props.language.menuItemContactMe,
       link: '/#contactMe',
-      key: '6'
+      key: '7'
     }
   ];
 
