@@ -181,8 +181,9 @@ const TURKISH = {
   followMe: 'TAKİP EDİN',
 
   sendMeANote: 'BANA NOT GÖNDERİN',
-  fullNameText: 'İsim Soyisim:',
-  messageText: 'Mesaj:',
+  fullNameText: 'İsim Soyisim',
+  getInTouchEmailText: 'Email',
+  messageText: 'Mesaj',
   sendMessageText: 'Mesajı Gönder',
 
   alertSuccessText: 'Başarıyla gönderildi!',
@@ -365,8 +366,9 @@ const ENGLISH = {
   followMe: 'FOLLOW ME',
 
   sendMeANote: 'SEND ME A NOTE',
-  fullNameText: 'Full Name:',
-  messageText: 'Message:',
+  fullNameText: 'Full Name',
+  getInTouchEmailText: 'Email',
+  messageText: 'Message',
   sendMessageText: 'Send Message',
 
   alertSuccessText: 'Successfuly sent!',

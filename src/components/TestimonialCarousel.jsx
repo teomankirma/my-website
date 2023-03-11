@@ -7,27 +7,28 @@ import client4 from '../images/client4.jpeg';
 
 function TestimonialCarousel(props) {
   return (
-    <div id="carouselExample" className="carousel slide">
+    <div id="carouselExampleIndicators" className="carousel slide">
       <div className="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
           className="active"
           aria-current="true"
           aria-label="Slide 1"></button>
         <button
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="1"
           aria-label="Slide 2"></button>
         <button
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
           aria-label="Slide 3"></button>
         <button
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="3"
           aria-label="Slide 4"></button>
       </div>
@@ -72,20 +73,20 @@ function TestimonialCarousel(props) {
       <button
         className="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExample"
+        data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev">
-        <span>
-          <i className="fa fa-angle-left" aria-hidden="true"></i>
+        <span aria-hidden="true">
+          <i className="fa fa-angle-left"></i>
         </span>
         <span className="visually-hidden">Previous</span>
       </button>
       <button
         className="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExample"
+        data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next">
-        <span>
-          <i className="fa fa-angle-right" aria-hidden="true"></i>
+        <span aria-hidden="true">
+          <i className="fa fa-angle-right"></i>
         </span>
         <span className="visually-hidden">Next</span>
       </button>

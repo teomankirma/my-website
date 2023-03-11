@@ -50,7 +50,7 @@ function GetInTouch(props) {
           <ContactUsForm
             sendMeANote={props.language.sendMeANote}
             fullNameText={props.language.fullNameText}
-            emailText={props.language.emailText}
+            emailText={props.language.getInTouchEmailText}
             messageText={props.language.messageText}
             sendMessageText={props.language.sendMessageText}
             alertSuccessText={props.language.alertSuccessText}
