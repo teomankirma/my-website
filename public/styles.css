@@ -1,7 +1,3 @@
-* {
-  font-family: 'Poppins', sans-serif;
-}
-
 /* Home */
 .home-button {
   position: absolute;
@@ -84,6 +80,10 @@ ul {
 
 .float-end {
   float: 'right';
+}
+
+.fa-download {
+  padding-left: 2%;
 }
 
 /* Portfolio */
