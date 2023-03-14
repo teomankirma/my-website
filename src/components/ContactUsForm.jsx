@@ -8,7 +8,7 @@ function ContactUsForm(props) {
   const form = useRef();
   const alert = useAlert();
 
-  const success = props.alertSuccessText;
+  const successMessage = props.alertSuccessText;
   const errorMessage = props.alertErrorText;
 
   const sendEmail = (e) => {
@@ -18,11 +18,11 @@ function ContactUsForm(props) {
       (result) => {
         console.log(result.text);
         e.target.reset();
-        alert.show({ success }, { type: 'success' });
+        alert.show(successMessage, { type: 'success' });
       },
       (error) => {
         console.log(error.text);
-        alert.show({ errorMessage }, { type: 'error' });
+        alert.show(errorMessage, { type: 'error' });
       }
     );
   };
@@ -60,7 +60,7 @@ function ContactUsForm(props) {
         <Textarea
           label={props.messageText}
           name="message"
-          placeholder="Tell me more about your needs..."
+          placeholder={props.messagePlaceholder}
           rows={6}
           fullWidth={true}
           bordered
@@ -92,6 +92,7 @@ ContactUsForm.propTypes = {
   emailText: PropTypes.string,
   messageText: PropTypes.string,
   sendMessageText: PropTypes.string,
+  messagePlaceholder: PropTypes.string,
   alertSuccessText: PropTypes.string,
   alertErrorText: PropTypes.string
 };

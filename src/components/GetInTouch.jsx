@@ -52,6 +52,7 @@ function GetInTouch(props) {
             fullNameText={props.language.fullNameText}
             emailText={props.language.getInTouchEmailText}
             messageText={props.language.messageText}
+            messagePlaceholder={props.language.messagePlaceholder}
             sendMessageText={props.language.sendMessageText}
             alertSuccessText={props.language.alertSuccessText}
             alertErrorText={props.language.alertErrorText}

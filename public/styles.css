@@ -131,8 +131,5 @@ ul {
 /* Footer */
 .footer {
   padding: 5% 0;
-}
-
-.footer-text {
-  padding-left: 5%;
+  text-align: center;
 }
