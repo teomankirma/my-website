@@ -30,7 +30,7 @@ const TURKISH = {
   knowMeMore: 'Beni Tanıyın',
 
   whoAmIFirst: 'Ben',
-  whoAmISecond: "Frontend Developer'ım",
+  whoAmISecond: " Frontend Developer'ım",
   aboutMe: `Merhaba, ismim Teoman. ${age} yaşındayım ve Nişantaşı Üniversitesi'nde Yazılım Mühendisliği bölümünde eğitimime devam etmekteyim. İzmir'de yaşıyorum. Basketbol oynamayı, gitar çalmayı ve oyun oynamayı seviyorum. Front-End Developer veya Full-Stack Developer olmayı hedefliyorum.`,
   myExperiences:
     "HTML, CSS, JavaScript vb. Front-End dilleri ve Framework'lerinde tecrübelerim var. Okulumdaki eğitimden kaynaklı Java, C#, Dart dillerinde de tecrübeliyim.",
@@ -214,7 +214,7 @@ const ENGLISH = {
   knowMeMore: 'Know Me More',
 
   whoAmIFirst: "I'm",
-  whoAmISecond: 'a Frontend Developer.',
+  whoAmISecond: ' a Frontend Developer',
   aboutMe:
     "Hello, my name is Teoman. I'm 20 years old and I'm studying Software Engineering at Nisantasi University. I live in Istanbul. I love playing basketball, playing the guitar, and playing video games. I aim to be a Frontend Developer or a Full-Stack Developer.",
   myExperiences:

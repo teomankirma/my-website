@@ -68,7 +68,7 @@ function Header(props) {
             onChange={() => darkMode.toggle()}
           />
         </Navbar.Item>
-        <Navbar.Item>
+        {/* <Navbar.Item>
           <Link color="success" href="https://twitter.com/teomankirma">
             <i className="fa-brands fa-twitter"></i>
           </Link>
@@ -82,7 +82,7 @@ function Header(props) {
           <Link color="success" href="https://www.linkedin.com/in/teomankirma/">
             <i className="fa-brands fa-linkedin"></i>
           </Link>
-        </Navbar.Item>
+        </Navbar.Item> */}
         <Navbar.Item>
           <Link onClick={props.turkish}>🇹🇷</Link>
         </Navbar.Item>
