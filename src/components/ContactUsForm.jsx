@@ -60,7 +60,7 @@ function ContactUsForm(props) {
         <Textarea
           label={props.messageText}
           name="message"
-          placeholder="Tell me more about your needs..."
+          placeholder={props.messagePlaceholder}
           rows={6}
           fullWidth={true}
           bordered
@@ -92,6 +92,7 @@ ContactUsForm.propTypes = {
   emailText: PropTypes.string,
   messageText: PropTypes.string,
   sendMessageText: PropTypes.string,
+  messagePlaceholder: PropTypes.string,
   alertSuccessText: PropTypes.string,
   alertErrorText: PropTypes.string
 };

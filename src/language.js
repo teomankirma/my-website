@@ -184,6 +184,7 @@ const TURKISH = {
   fullNameText: 'İsim Soyisim',
   getInTouchEmailText: 'Email',
   messageText: 'Mesaj',
+  messagePlaceholder: 'İstekleriniz hakkında daha fazla bilgi verin...',
   sendMessageText: 'Mesajı Gönder',
 
   alertSuccessText: 'Başarıyla gönderildi!',
@@ -369,6 +370,7 @@ const ENGLISH = {
   fullNameText: 'Full Name',
   getInTouchEmailText: 'Email',
   messageText: 'Message',
+  messagePlaceholder: 'Tell me more about your needs...',
   sendMessageText: 'Send Message',
 
   alertSuccessText: 'Successfuly sent!',
