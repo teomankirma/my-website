@@ -26,8 +26,8 @@ function Home(props) {
       </div>
       <div className="row">
         <div className="col-lg-12">
-          <Spacer y={1} />
-          <Text h1 weight="semibold">
+          <Spacer y={2} />
+          <Text h2 weight="bold">
             <Typewriter
               words={props.language.typewriter}
               loop={0}
@@ -39,7 +39,7 @@ function Home(props) {
       </div>
       <div className="row">
         <div className="col-lg-12">
-          <Spacer y={1} />
+          <Spacer y={2} />
           <Text h3 weight="medium">
             {props.language.location}
           </Text>
