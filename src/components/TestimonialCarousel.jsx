@@ -1,11 +1,14 @@
 import TestimonialCarouselCard from './TestimonialCarouselCard';
-import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { Context } from './App';
 import client1 from '../images/client1.jpeg';
 import client2 from '../images/client2.jpeg';
 import client3 from '../images/client3.jpeg';
 import client4 from '../images/client4.jpeg';
 
-function TestimonialCarousel(props) {
+function TestimonialCarousel() {
+  const context = useContext(Context);
+
   return (
     <div id="carouselExampleIndicators" className="carousel slide">
       <div className="carousel-indicators">
@@ -36,37 +39,37 @@ function TestimonialCarousel(props) {
         <div className="carousel-item active">
           <TestimonialCarouselCard
             image={client1}
-            name={props.client1Name}
-            who={props.client1Tag}
-            comment={props.client1Comment}
-            stars={props.client1Stars}
+            name={context.language.client1Name}
+            who={context.language.client1Tag}
+            comment={context.language.client1Comment}
+            stars={context.language.client1Stars}
           />
         </div>
         <div className="carousel-item">
           <TestimonialCarouselCard
             image={client2}
-            name={props.client2Name}
-            who={props.client2Tag}
-            comment={props.client2Comment}
-            stars={props.client2Stars}
+            name={context.language.client2Name}
+            who={context.language.client2Tag}
+            comment={context.language.client2Comment}
+            stars={context.language.client2Stars}
           />
         </div>
         <div className="carousel-item">
           <TestimonialCarouselCard
             image={client3}
-            name={props.client3Name}
-            who={props.client3Tag}
-            comment={props.client3Comment}
-            stars={props.client3Stars}
+            name={context.language.client3Name}
+            who={context.language.client3Tag}
+            comment={context.language.client3Comment}
+            stars={context.language.client3Stars}
           />
         </div>
         <div className="carousel-item">
           <TestimonialCarouselCard
             image={client4}
-            name={props.client4Name}
-            who={props.client4Tag}
-            comment={props.client4Comment}
-            stars={props.client4Stars}
+            name={context.language.client4Name}
+            who={context.language.client4Tag}
+            comment={context.language.client4Comment}
+            stars={context.language.client4Stars}
           />
         </div>
       </div>
@@ -93,24 +96,5 @@ function TestimonialCarousel(props) {
     </div>
   );
 }
-
-TestimonialCarousel.propTypes = {
-  client1Name: PropTypes.string,
-  client2Name: PropTypes.string,
-  client3Name: PropTypes.string,
-  client4Name: PropTypes.string,
-  client1Tag: PropTypes.string,
-  client2Tag: PropTypes.string,
-  client3Tag: PropTypes.string,
-  client4Tag: PropTypes.string,
-  client1Comment: PropTypes.string,
-  client2Comment: PropTypes.string,
-  client3Comment: PropTypes.string,
-  client4Comment: PropTypes.string,
-  client1Stars: PropTypes.string,
-  client2Stars: PropTypes.string,
-  client3Stars: PropTypes.string,
-  client4Stars: PropTypes.string
-};
 
 export default TestimonialCarousel;

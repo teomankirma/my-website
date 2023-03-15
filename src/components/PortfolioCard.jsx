@@ -1,8 +1,12 @@
 import { Card, Modal, Spacer, Text } from '@nextui-org/react';
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { Context } from './App';
 import { useState } from 'react';
 
 function PortfolioCard(props) {
+  const context = useContext(Context);
+
   const [visible, setVisible] = useState(false);
   const handler = () => setVisible(true);
 
@@ -38,7 +42,7 @@ function PortfolioCard(props) {
               <ul>
                 <li>
                   <Text weight="medium">
-                    <b className="portfolio-li-b">{props.projectInfoText}</b>
+                    <b className="portfolio-li-b">{context.language.projectInfoText}</b>
                     <Spacer y={1} />
                     {props.projectInfo}
                   </Text>
@@ -46,34 +50,34 @@ function PortfolioCard(props) {
                 <Spacer y={2} />
                 <li>
                   <Text weight="medium">
-                    <b className="portfolio-li-b">{props.projectDetailsText}</b>
+                    <b className="portfolio-li-b">{context.language.projectDetailsText}</b>
                     <Spacer y={1} />
                   </Text>
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">{props.clientText}</b>
+                    <b className="li-b">{context.language.clientText}</b>
                     {props.client}
                   </Text>
                   <hr className="li-hr" />
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">{props.technologiesText}</b>
+                    <b className="li-b">{context.language.technologiesText}</b>
                     {props.technologies}
                   </Text>
                   <hr className="li-hr" />
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">{props.industryText}</b>
+                    <b className="li-b">{context.language.industryText}</b>
                     {props.industry}
                   </Text>
                   <hr className="li-hr" />
                 </li>
                 <li>
                   <Text weight="medium">
-                    <b className="li-b">{props.dateText}</b>
+                    <b className="li-b">{context.language.dateText}</b>
                     {props.date}
                   </Text>
                   <hr className="li-hr" />
@@ -93,15 +97,9 @@ PortfolioCard.propTypes = {
   alt: PropTypes.string,
   title: PropTypes.string,
   projectInfo: PropTypes.string,
-  projectInfoText: PropTypes.string,
-  projectDetailsText: PropTypes.string,
-  clientText: PropTypes.string,
   client: PropTypes.string,
-  technologiesText: PropTypes.string,
   technologies: PropTypes.string,
-  industryText: PropTypes.string,
   industry: PropTypes.string,
-  dateText: PropTypes.string,
   date: PropTypes.string
 };
 

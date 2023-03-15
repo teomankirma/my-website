@@ -1,15 +1,18 @@
 import { Input, Textarea, Button, Spacer, Text } from '@nextui-org/react';
 import emailjs from '@emailjs/browser';
-import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { Context } from './App';
 import { useRef } from 'react';
 import { useAlert } from 'react-alert';
 
-function ContactUsForm(props) {
+function ContactUsForm() {
+  const context = useContext(Context);
+
   const form = useRef();
   const alert = useAlert();
 
-  const successMessage = props.alertSuccessText;
-  const errorMessage = props.alertErrorText;
+  const successMessage = context.language.alertSuccessText;
+  const errorMessage = context.language.alertErrorText;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,11 +32,11 @@ function ContactUsForm(props) {
 
   return (
     <div className="contact-div">
-      <Text h4>{props.sendMeANote}</Text>
+      <Text h4>{context.language.sendMeANote}</Text>
       <Spacer y={1} />
       <form ref={form} onSubmit={sendEmail}>
         <Input
-          label={props.fullNameText}
+          label={context.language.fullNameText}
           name="from_name"
           type="text"
           width="50%"
@@ -45,7 +48,7 @@ function ContactUsForm(props) {
           required={true}
         />
         <Input
-          label={props.emailText}
+          label={context.language.emailText}
           name="from_email"
           type="email"
           width="50%"
@@ -58,9 +61,9 @@ function ContactUsForm(props) {
         <Spacer y={1} />
 
         <Textarea
-          label={props.messageText}
+          label={context.language.messageText}
           name="message"
-          placeholder={props.messagePlaceholder}
+          placeholder={context.language.messagePlaceholder}
           rows={6}
           fullWidth={true}
           bordered
@@ -77,24 +80,12 @@ function ContactUsForm(props) {
             type="submit"
             rounded
             css={{ textAlign: 'center', zIndex: '0' }}>
-            {props.sendMessageText}
+            {context.language.sendMessageText}
           </Button>
         </div>
       </form>
     </div>
   );
 }
-
-ContactUsForm.propTypes = {
-  language: PropTypes.object,
-  sendMeANote: PropTypes.string,
-  fullNameText: PropTypes.string,
-  emailText: PropTypes.string,
-  messageText: PropTypes.string,
-  sendMessageText: PropTypes.string,
-  messagePlaceholder: PropTypes.string,
-  alertSuccessText: PropTypes.string,
-  alertErrorText: PropTypes.string
-};
 
 export default ContactUsForm;

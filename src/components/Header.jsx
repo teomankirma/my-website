@@ -1,12 +1,15 @@
 import { Navbar, Link, Switch } from '@nextui-org/react';
 import useDarkMode from '@fisch0920/use-dark-mode';
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
+import { Context } from './App';
 import PropTypes from 'prop-types';
 import SunIcon from './SunIcon';
 import NightIcon from './NightIcon';
 
-function Header(props) {
+function Header() {
   // Navbar Collapse was not closing on clicking one item from the collapse menu. Solution is from: https://github.com/nextui-org/nextui/issues/752#issuecomment-1324264715
+
+  const context = useContext(Context);
 
   const navbarToggleRef = useRef();
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -15,34 +18,34 @@ function Header(props) {
   );
 
   const menuItems = [
-    { label: props.language.menuItemHome, link: '/#home', key: '1' },
+    { label: context.language.menuItemHome, link: '/#home', key: '1' },
     {
-      label: props.language.menuItemAboutMe,
+      label: context.language.menuItemAboutMe,
       link: '/#aboutMe',
       key: '2'
     },
     {
-      label: props.language.menuItemWhatIDo,
+      label: context.language.menuItemWhatIDo,
       link: '/#whatIDo',
       key: '3'
     },
     {
-      label: props.language.menuItemResume,
+      label: context.language.menuItemResume,
       link: '/#resume',
       key: '4'
     },
     {
-      label: props.language.menuItemPortfolio,
+      label: context.language.menuItemPortfolio,
       link: '/#portfolio',
       key: '5'
     },
     {
-      label: props.language.menuItemTestimonial,
+      label: context.language.menuItemTestimonial,
       link: '/#testimonial',
       key: '6'
     },
     {
-      label: props.language.menuItemContactMe,
+      label: context.language.menuItemContactMe,
       link: '/#contactMe',
       key: '7'
     }
@@ -57,7 +60,7 @@ function Header(props) {
 
   return (
     <Navbar variant="sticky">
-      <Navbar.Brand style={{ fontWeight: 'bold' }}>{props.language.name}</Navbar.Brand>
+      <Navbar.Brand style={{ fontWeight: 'bold' }}>{context.language.name}</Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
           <Switch
@@ -69,10 +72,10 @@ function Header(props) {
           />
         </Navbar.Item>
         <Navbar.Item>
-          <Link onClick={props.turkish}>🇹🇷</Link>
+          <Link onClick={context.languageTurkish}>🇹🇷</Link>
         </Navbar.Item>
         <Navbar.Item>
-          <Link onClick={props.english}>🇬🇧</Link>
+          <Link onClick={context.languageEnglish}>🇬🇧</Link>
         </Navbar.Item>
         <Navbar.Toggle
           ref={navbarToggleRef}
