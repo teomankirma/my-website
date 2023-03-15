@@ -10,7 +10,7 @@ import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Testimonial from './Testimonial';
 import GetInTouch from './GetInTouch';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 export const Context = createContext();
 
@@ -46,7 +46,7 @@ function App() {
         <Portfolio />
         <Testimonial />
         <GetInTouch />
-        {/* <Footer language={language} /> */}
+        <Footer />
       </NextUIProvider>
     </Context.Provider>
   );

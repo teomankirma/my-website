@@ -1,18 +1,17 @@
 import { Text } from '@nextui-org/react';
-import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { Context } from './App';
 
-function Footer(props) {
+function Footer() {
+  const context = useContext(Context);
+
   return (
     <div className="footer">
       <Text className="footer-text" h5>
-        {props.language.footer}
+        {context.language.footer}
       </Text>
     </div>
   );
 }
-
-Footer.propTypes = {
-  language: PropTypes.object
-};
 
 export default Footer;
