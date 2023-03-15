@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import { NextUIProvider, createTheme } from '@nextui-org/react';
 import useDarkMode from '@fisch0920/use-dark-mode';
 import { TURKISH, ENGLISH } from '../language';
@@ -10,7 +10,9 @@ import Resume from './Resume';
 import Portfolio from './Portfolio';
 import Testimonial from './Testimonial';
 import GetInTouch from './GetInTouch';
-import Footer from './Footer';
+// import Footer from './Footer';
+
+export const Context = createContext();
 
 function App() {
   const lightTheme = createTheme({
@@ -34,17 +36,19 @@ function App() {
   const darkMode = useDarkMode(false);
 
   return (
-    <NextUIProvider theme={darkMode.value ? darkTheme : lightTheme}>
-      <Header language={language} turkish={languageTurkish} english={languageEnglish} />
-      <Home language={language} />
-      <KnowMeMore language={language} />
-      <WhatIDo language={language} />
-      <Resume language={language} />
-      <Portfolio language={language} />
-      <Testimonial language={language} />
-      <GetInTouch language={language} />
-      <Footer language={language} />
-    </NextUIProvider>
+    <Context.Provider value={{ language, languageTurkish, languageEnglish }}>
+      <NextUIProvider theme={darkMode.value ? darkTheme : lightTheme}>
+        <Header />
+        <Home />
+        <KnowMeMore />
+        <WhatIDo />
+        <Resume />
+        <Portfolio />
+        <Testimonial />
+        <GetInTouch />
+        {/* <Footer language={language} /> */}
+      </NextUIProvider>
+    </Context.Provider>
   );
 }
 

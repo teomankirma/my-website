@@ -1,6 +1,7 @@
 import SectionHeader from './SectionHeader';
 import { Spacer } from '@nextui-org/react';
-import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { Context } from './App';
 import PortfolioCard from './PortfolioCard';
 import atm from '../images/atm.png';
 import blogWebsite from '../images/blog-website.png';
@@ -8,11 +9,13 @@ import keeper from '../images/keeper.png';
 import myWebsite from '../images/my-website.png';
 import weather from '../images/weather.png';
 
-function Portfolio(props) {
+function Portfolio() {
+  const context = useContext(Context);
+
   return (
     <div className="portfolio section" id="portfolio">
       <div className="row">
-        <SectionHeader header={props.language.myWork} />
+        <SectionHeader header={context.language.myWork} />
       </div>
       <Spacer y={3} />
 
@@ -22,18 +25,12 @@ function Portfolio(props) {
           <PortfolioCard
             src={atm}
             alt="atm"
-            title={props.language.atmProjectTitle}
-            projectInfoText={props.language.projectInfoText}
-            projectInfo={props.language.atmProjectInfo}
-            projectDetailsText={props.language.projectDetailsText}
-            clientText={props.language.clientText}
-            client={props.language.atmClient}
-            technologiesText={props.language.technologiesText}
-            technologies={props.language.atmTechnologies}
-            industryText={props.language.industryText}
-            industry={props.language.atmIndustry}
-            dateText={props.language.dateText}
-            date={props.language.atmDate}
+            title={context.language.atmProjectTitle}
+            projectInfo={context.language.atmProjectInfo}
+            client={context.language.atmClient}
+            technologies={context.language.atmTechnologies}
+            industry={context.language.atmIndustry}
+            date={context.language.atmDate}
           />
           <Spacer y={1} />
         </div>
@@ -41,18 +38,18 @@ function Portfolio(props) {
           <PortfolioCard
             src={blogWebsite}
             alt="blog-website"
-            title={props.language.blogWebsiteProjectTitle}
-            projectInfoText={props.language.projectInfoText}
-            projectInfo={props.language.blogWebsiteProjectInfo}
-            projectDetailsText={props.language.projectDetailsText}
-            clientText={props.language.clientText}
-            client={props.language.blogWebsiteClient}
-            technologiesText={props.language.technologiesText}
-            technologies={props.language.blogWebsiteTechnologies}
-            industryText={props.language.industryText}
-            industry={props.language.blogWebsiteIndustry}
-            dateText={props.language.dateText}
-            date={props.language.blogWebsiteDate}
+            title={context.language.blogWebsiteProjectTitle}
+            projectInfoText={context.language.projectInfoText}
+            projectInfo={context.language.blogWebsiteProjectInfo}
+            projectDetailsText={context.language.projectDetailsText}
+            clientText={context.language.clientText}
+            client={context.language.blogWebsiteClient}
+            technologiesText={context.language.technologiesText}
+            technologies={context.language.blogWebsiteTechnologies}
+            industryText={context.language.industryText}
+            industry={context.language.blogWebsiteIndustry}
+            dateText={context.language.dateText}
+            date={context.language.blogWebsiteDate}
           />
           <Spacer y={1} />
         </div>
@@ -60,18 +57,18 @@ function Portfolio(props) {
           <PortfolioCard
             src={keeper}
             alt="keeper"
-            title={props.language.keeperProjectTitle}
-            projectInfoText={props.language.projectInfoText}
-            projectInfo={props.language.keeperProjectInfo}
-            projectDetailsText={props.language.projectDetailsText}
-            clientText={props.language.clientText}
-            client={props.language.keeperClient}
-            technologiesText={props.language.technologiesText}
-            technologies={props.language.keeperTechnologies}
-            industryText={props.language.industryText}
-            industry={props.language.keeperIndustry}
-            dateText={props.language.dateText}
-            date={props.language.keeperDate}
+            title={context.language.keeperProjectTitle}
+            projectInfoText={context.language.projectInfoText}
+            projectInfo={context.language.keeperProjectInfo}
+            projectDetailsText={context.language.projectDetailsText}
+            clientText={context.language.clientText}
+            client={context.language.keeperClient}
+            technologiesText={context.language.technologiesText}
+            technologies={context.language.keeperTechnologies}
+            industryText={context.language.industryText}
+            industry={context.language.keeperIndustry}
+            dateText={context.language.dateText}
+            date={context.language.keeperDate}
           />
           <Spacer y={1} />
         </div>
@@ -82,18 +79,18 @@ function Portfolio(props) {
             src={myWebsite}
             alt="my-website"
             height={400}
-            title={props.language.myWebsiteProjectTitle}
-            projectInfoText={props.language.projectInfoText}
-            projectInfo={props.language.myWebsiteProjectInfo}
-            projectDetailsText={props.language.projectDetailsText}
-            clientText={props.language.clientText}
-            client={props.language.myWebsiteClient}
-            technologiesText={props.language.technologiesText}
-            technologies={props.language.myWebsiteTechnologies}
-            industryText={props.language.industryText}
-            industry={props.language.myWebsiteIndustry}
-            dateText={props.language.dateText}
-            date={props.language.myWebsiteDate}
+            title={context.language.myWebsiteProjectTitle}
+            projectInfoText={context.language.projectInfoText}
+            projectInfo={context.language.myWebsiteProjectInfo}
+            projectDetailsText={context.language.projectDetailsText}
+            clientText={context.language.clientText}
+            client={context.language.myWebsiteClient}
+            technologiesText={context.language.technologiesText}
+            technologies={context.language.myWebsiteTechnologies}
+            industryText={context.language.industryText}
+            industry={context.language.myWebsiteIndustry}
+            dateText={context.language.dateText}
+            date={context.language.myWebsiteDate}
           />
         </div>
         <div className="col-lg-6">
@@ -101,18 +98,18 @@ function Portfolio(props) {
             src={weather}
             alt="weather"
             height={400}
-            title={props.language.weatherProjectTitle}
-            projectInfoText={props.language.projectInfoText}
-            projectInfo={props.language.weatherProjectInfo}
-            projectDetailsText={props.language.projectDetailsText}
-            clientText={props.language.clientText}
-            client={props.language.weatherClient}
-            technologiesText={props.language.technologiesText}
-            technologies={props.language.weatherTechnologies}
-            industryText={props.language.industryText}
-            industry={props.language.weatherIndustry}
-            dateText={props.language.dateText}
-            date={props.language.weatherDate}
+            title={context.language.weatherProjectTitle}
+            projectInfoText={context.language.projectInfoText}
+            projectInfo={context.language.weatherProjectInfo}
+            projectDetailsText={context.language.projectDetailsText}
+            clientText={context.language.clientText}
+            client={context.language.weatherClient}
+            technologiesText={context.language.technologiesText}
+            technologies={context.language.weatherTechnologies}
+            industryText={context.language.industryText}
+            industry={context.language.weatherIndustry}
+            dateText={context.language.dateText}
+            date={context.language.weatherDate}
             blogWebsite
           />
         </div>
@@ -121,8 +118,5 @@ function Portfolio(props) {
     </div>
   );
 }
-Portfolio.propTypes = {
-  language: PropTypes.object
-};
 
 export default Portfolio;
