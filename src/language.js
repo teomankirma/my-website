@@ -21,9 +21,9 @@ const TURKISH = {
   menuItemContactMe: 'Bana Ulaşın',
 
   /*------- Home -------*/
-  welcome: 'Hoş geldin',
+  welcome: 'Hoş geldiniz',
   typewriter: ['Ben Teoman Kırma.', "Yazılım Mühendisi'yim.", "Frontend Developer'ım."],
-  location: "İzmir, Türkiye'de yaşıyorum",
+  location: "İzmir'de yaşıyorum",
   hireMe: 'Beni İşe Alın',
 
   /*------- Know Me More -------*/
@@ -109,43 +109,43 @@ const TURKISH = {
 
   atmProjectTitle: 'ATM',
   atmProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  atmClient: '',
-  atmTechnologies: '',
-  atmIndustry: '',
-  atmDate: '',
+    'Giriş yapabileceğiniz veya kayıt olabileceğiniz ve sistemden para yatırıp çekebileceğiniz bir uygulama. Ayrıca başarılı bir şekilde giriş yaptıktan sonra şifrenizi değiştirebilirsiniz.',
+  atmClient: 'N/A',
+  atmTechnologies: 'Java',
+  atmIndustry: 'Finans',
+  atmDate: '12 Şubat, 2022',
 
   blogWebsiteProjectTitle: 'Blog Website',
   blogWebsiteProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  blogWebsiteClient: '',
-  blogWebsiteTechnologies: '',
-  blogWebsiteIndustry: '',
-  blogWebsiteDate: '',
+    'Bir veritabanı bağlantısıyla bloglarınızı paylaşabileceğiniz bir web sitesi.',
+  blogWebsiteClient: 'N/A',
+  blogWebsiteTechnologies: 'JavaScript, Express, EJS, Mongoose',
+  blogWebsiteIndustry: 'Web',
+  blogWebsiteDate: '6 Ocak 2023',
 
   keeperProjectTitle: 'Keeper',
   keeperProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  keeperClient: '',
-  keeperTechnologies: '',
-  keeperIndustry: '',
-  keeperDate: '',
+    'Yeni notlar oluşturabileceğiniz ve mevcut olanları silebileceğiniz bir web sitesi.',
+  keeperClient: 'N/A',
+  keeperTechnologies: 'JavaScript, React',
+  keeperIndustry: 'Web',
+  keeperDate: '26 Ocak 2023',
 
   myWebsiteProjectTitle: 'My Website',
   myWebsiteProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  myWebsiteClient: '',
-  myWebsiteTechnologies: '',
-  myWebsiteIndustry: '',
-  myWebsiteDate: '',
+    'Diğer insanlarla deneyiminizi, işlerinizi ve bilgilerinizi paylaşabileceğiniz bir profesyonel portföy web sitesi.',
+  myWebsiteClient: 'N/A',
+  myWebsiteTechnologies: 'JavaScript, React, EmailJS',
+  myWebsiteIndustry: 'Web',
+  myWebsiteDate: '17 Mart 2023',
 
   weatherProjectTitle: 'Weather',
   weatherProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  weatherClient: '',
-  weatherTechnologies: '',
-  weatherIndustry: '',
-  weatherDate: '',
+    "OpenWeather API'dan bilgi alarak, girilen şehir için güncel günün hava verilerini gösteren bir hava durumu web sitesi.",
+  weatherClient: 'N/A',
+  weatherTechnologies: 'JavaScript',
+  weatherIndustry: 'Web',
+  weatherDate: '30 Eylül 2022',
 
   /*------- Testimonial -------*/
   clientSpeak: 'Müşteri Yorumları',
@@ -295,43 +295,41 @@ const ENGLISH = {
 
   atmProjectTitle: 'ATM',
   atmProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  atmClient: '',
-  atmTechnologies: '',
-  atmIndustry: '',
-  atmDate: '',
+    'An app where you can sign up or sign in and deposit and withdraw money from the system. You can also change your password after logging in successfully.',
+  atmClient: 'N/A',
+  atmTechnologies: 'Java',
+  atmIndustry: 'Finance',
+  atmDate: 'February 12, 2022',
 
   blogWebsiteProjectTitle: 'Blog Website',
-  blogWebsiteProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  blogWebsiteClient: '',
-  blogWebsiteTechnologies: '',
-  blogWebsiteIndustry: '',
-  blogWebsiteDate: '',
+  blogWebsiteProjectInfo: 'A website where you can share your blogs with a database connection.',
+  blogWebsiteClient: 'N/A',
+  blogWebsiteTechnologies: 'JavaScript, Express, EJS, Mongoose',
+  blogWebsiteIndustry: 'Web',
+  blogWebsiteDate: 'January 6, 2023',
 
   keeperProjectTitle: 'Keeper',
-  keeperProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  keeperClient: '',
-  keeperTechnologies: '',
-  keeperIndustry: '',
-  keeperDate: '',
+  keeperProjectInfo: 'A website where you can create new notes and delete existing ones.',
+  keeperClient: 'N/A',
+  keeperTechnologies: 'JavaScript, React',
+  keeperIndustry: 'Web',
+  keeperDate: 'January 26, 2023',
 
   myWebsiteProjectTitle: 'My Website',
   myWebsiteProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  myWebsiteClient: '',
-  myWebsiteTechnologies: '',
-  myWebsiteIndustry: '',
-  myWebsiteDate: '',
+    'A professional portfolio website where you can share your experience, work, and information with other people.',
+  myWebsiteClient: 'N/A',
+  myWebsiteTechnologies: 'JavaScript, React, EmailJS',
+  myWebsiteIndustry: 'Web',
+  myWebsiteDate: 'March 17, 2023',
 
   weatherProjectTitle: 'Weather',
   weatherProjectInfo:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-  weatherClient: '',
-  weatherTechnologies: '',
-  weatherIndustry: '',
-  weatherDate: '',
+    "A weather website that retrieves information from OpenWeather API and displays the current day's weather data for the provided city.",
+  weatherClient: 'N/A',
+  weatherTechnologies: 'JavaScript',
+  weatherIndustry: 'Web',
+  weatherDate: 'September 30, 2022',
 
   /*------- Testimonial -------*/
   clientSpeak: 'Client Speak',

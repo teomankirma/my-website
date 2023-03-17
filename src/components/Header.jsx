@@ -59,7 +59,7 @@ function Header() {
   const darkMode = useDarkMode(false);
 
   return (
-    <Navbar variant="sticky">
+    <Navbar variant="floating">
       <Navbar.Brand style={{ fontWeight: 'bold' }}>{context.language.name}</Navbar.Brand>
       <Navbar.Content>
         <Navbar.Item>
