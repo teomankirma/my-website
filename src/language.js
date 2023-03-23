@@ -31,9 +31,9 @@ const TURKISH = {
 
   whoAmIFirst: 'Ben',
   whoAmISecond: " Frontend Developer'ım",
-  aboutMe: `Merhaba, ismim Teoman. ${age} yaşındayım ve Nişantaşı Üniversitesi'nde Yazılım Mühendisliği bölümünde eğitimime devam etmekteyim. İzmir'de yaşıyorum. Basketbol oynamayı, gitar çalmayı ve oyun oynamayı seviyorum. Front-End Developer veya Full-Stack Developer olmayı hedefliyorum.`,
+  aboutMe: `Merhaba, ismim Teoman. ${age} yaşındayım ve Nişantaşı Üniversitesi'nde Yazılım Mühendisliği bölümünde eğitimime devam etmekteyim. İzmir'de yaşıyorum. Basketbol oynamayı, gitar çalmayı ve oyun oynamayı seviyorum. Frontend Developer veya Full-Stack Developer olmayı hedefliyorum.`,
   myExperiences:
-    "HTML, CSS, JavaScript vb. Front-End dilleri ve Framework'lerinde tecrübelerim var. Okulumdaki eğitimden kaynaklı Java, C#, Dart dillerinde de tecrübeliyim.",
+    "HTML, CSS, JavaScript vb. Frontend dilleri ve Framework'lerinde tecrübelerim var. Okulumdaki eğitimden kaynaklı Java, C#, Dart dillerinde de tecrübeliyim.",
 
   nameText: 'İsim: ',
   emailText: 'Email: ',
