@@ -48,7 +48,7 @@ function ContactUsForm() {
           required={true}
         />
         <Input
-          label={context.language.emailText}
+          label={context.language.getInTouchEmailText}
           name="from_email"
           type="email"
           width="50%"
