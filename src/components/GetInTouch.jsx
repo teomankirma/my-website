@@ -20,12 +20,6 @@ function GetInTouch() {
             <Text h4>{context.language.contact}</Text>
             <img src={hi} className="get-in-touch-gif" />
             <Spacer y={1} />
-            <a className="get-in-touch-info" href="tel:+905342166935">
-              <Text size="$lg" h6>
-                <i className="fa-solid fa-phone"></i>
-                {context.language.phoneNumber}
-              </Text>
-            </a>
             <a className="get-in-touch-info" href="mailto:teomankirma@gmail.com">
               <Text size="$lg" h6>
                 <i className="fa-solid fa-envelope"></i>
