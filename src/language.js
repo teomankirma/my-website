@@ -216,8 +216,7 @@ const ENGLISH = {
 
   whoAmIFirst: "I'm",
   whoAmISecond: ' a Frontend Developer',
-  aboutMe:
-    "Hello, my name is Teoman. I'm 20 years old and I'm studying Software Engineering at Nisantasi University. I live in Istanbul. I love playing basketball, playing the guitar, and playing video games. I aim to be a Frontend Developer or a Full-Stack Developer.",
+  aboutMe: `Hello, my name is Teoman. I'm ${age} years old and I'm studying Software Engineering at Nisantasi University. I live in Istanbul. I love playing basketball, playing the guitar, and playing video games. I aim to be a Frontend Developer or a Full-Stack Developer.`,
   myExperiences:
     'I have experience with front-end languages and frameworks such as HTML, CSS, and JavaScript. Additionally, I have experience in Java, C#, and Dart, which I acquired through my education at school.',
 

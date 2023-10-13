@@ -2,7 +2,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { Text, Button, Spacer, Avatar } from '@nextui-org/react';
 import { useContext } from 'react';
 import { Context } from './App';
-import photo from '../images/photo.jpeg';
+import photo from '../images/photo.png';
 
 function Home() {
   const context = useContext(Context);
