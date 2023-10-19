@@ -1,4 +1,3 @@
-import CV from './cv.pdf';
 import Resume from './resume.pdf';
 
 const dob = new Date('07/27/2002');
@@ -44,7 +43,7 @@ const TURKISH = {
   from: 'İzmir, Türkiye',
 
   downloadResume: "CV'mi İndir",
-  resume: CV,
+  resume: Resume,
 
   experienceYear: '3+',
   experienceText: 'Yıl Deneyim',
